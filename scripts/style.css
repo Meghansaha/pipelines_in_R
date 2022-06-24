@@ -1,0 +1,56 @@
+/* CSS Themeing for slides */
+
+/* Font Import */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+/* Title Slide CSS */
+/* Background Image */
+.title-slide {
+  background-image: url(../images/title_back.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+/* Fonts */
+.title-slide h1 {
+  color: #ffffff; 
+  line-height: 1em;
+  padding: 8px 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 36px;
+  text-align: left;
+}
+
+.title-slide h2 {
+  color: #ffffff; 
+  line-height: 1em;
+  padding: 8px 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 24px;
+  font-style: italic;
+  text-align: left;
+}
+
+.title-slide h3 {
+  color: #ffffff; 
+  line-height: 1em;
+  background-image: url(../images/header_back.png);
+  background-repeat: no-repeat;
+  background-size: 35% 100%;
+  padding: 8px 0;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  text-align: left;
+  
+}
+
+/* Slide number */
+.title-slide .remark-slide-number {
+    bottom: 7px;
+    opacity: 1;
+    position: absolute;
+    left: 3%;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+}
