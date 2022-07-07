@@ -17,624 +17,288 @@ output:
       - "scripts/animation.css"
 ---
 
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
-
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
+xaringanExtra::use_slide_tone()
+xaringanExtra::use_freezeframe(responsive = FALSE)
 ```
+
+class: dark, center, middle, animated, fadeIn
+
+<img src= "images/initial_dream.png", width = "100%", height = "100%">
 
 ???
+So I have a story to tell you all, but before I get into that, I have a question to ask all of you. You don't have to answer me out loud, but...
+<br><br><br>
+When you see this image... Does it make you feel anything? Any ideas on what it is?
 
-Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+
+<br><br>
+Well, this is my personal, 100% accurate representation of a data pipeline. Now you're probably thinking I'm out of my mind, and I might be, but hear me out. Of course this isn't an actual data pipeline, but rather the mental image and feelings I had when I was in my last position as a Data specialist and was task with creating a data pipeline from scratch. 
+<br><br>
+The story I want to tell you all today is about how I created a data pipeline in R from scratch, but more specifically with the context of me being a self-taught R programmer in my first ever official data position.
+<br><br>
+Those of us that work in data, when we think of data pipelines, it might look something more like this...
+---
+class: dark, center, middle, animated, fadeIn
+
+<img src= "images/perfectpipe.png", width = "100%", height = "100%">
+
+???
+The "Perfect" Data Pipeline:
+Nice clear proccess, clean structures, with great results
+<br>
+<br>
+This is a pipeline to most of us, but in this last position I was in, the pipeline looked nothing like that at all. If we could say there was any pipeline, it was very manual, very clunky. So although I do have this story to tell, I've broken it up into the following themes:
+---
+class: dark, center, middle, animated, fadeIn
+# Make a new visual showing a "flowchart" of the story
+-First Encounters
+-Structures
+-Data Validation
+-Sustainability
+
+
+<h1><span>The Timeline</span></h1>
+
+<center><img src= "images/tl_1.png", width = "100%"></center>
+
+???
+Once during my first week of work when I had my first encounters with the data in this pipeline, and once again when I put in my formal resignation for this position about a month ago.
+<br>
+<br>
+You're probably wondering how this is even possible, maybe even saying to yourself "man, if her pipeline looked like that, no wonder she quit". <br>
+<br>
+Well, I'm gonna tell you all about it, but first, we need to go back to the beginnings..
+---
+class: light, animated, fadeIn
+
+<h1><span>The Timeline</span></h1>
+
+<center><img src= "images/tl_2.png", width = "100%"></center>
+
+???
+Back to that first day, week, and months of "real" work...
 
 ---
-class: center, middle
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
 
-# xaringan
+<img src="images/me.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
-### /ʃaː.'riŋ.ɡan/
+<p style="float: right;"><h2><b>Some Facts:</b></h2>
+
+ <ul><li>Self-Taught + 1<sup>st</sup> Data Position = "Impostor Syndrome"</li><br>
+     <li>Data dealt with opioid-related topics.</li><br>
+     <li>Organization did not have any pipelines.</li><br>
+     <li>Organization's expectations weren't clear...</li></ul></p>
+     
+???
+There's hope in those eyes..
+Some facts about how it was starting in this position...
+Expectations weren't clear...bc non-existent
 
 ---
-class: inverse, center, middle
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
+<center>
 
-# Get Started
+<h2><b>Expectations...</b></h2>
+
+<img class = "gif"; src="images/glasses-computer.gif" width = "450px">
+
+</center>
 
 ---
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
+<center>
 
-# Hello World
+<h2><b>Reality...</b></h2>
 
-Install the **xaringan** package from [Github](https://github.com/yihui/xaringan):
+<img class = "gif"; src="images/steve-harvey-scared.gif" width = "450px">
 
-```{r eval=FALSE, tidy=FALSE}
-remotes::install_github("yihui/xaringan")
-```
+</center>
 
+---
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
+
+<h2><b>So What Did I Do?</b></h2>
+
+<center>
+<img class = "gif"; src="images/headfirst.gif" width = "400px", height = "300px">
+</center>
+     
+???
+Jumped in head-first of course! Because what else was I going to do? I'm new, I have a lot to prove, not only to other people, but myself. I have to learn things as I go because I'm self-taught. I had to open R immediately of course!
+
+---
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
+
+<h3><b>What I did vs. <font color = "#0B82B9"><i>What I Should Have Done</i></font></b></h3>
+
+<center><br><br><br>
+<b>I tried to create R programs immediately.</b>
+<br><br>
 --
+<b><i><font color = "#0B82B9">I should have started investigating instead.</font></i></b><br><br>
 
-You are recommended to use the [RStudio IDE](https://www.rstudio.com/products/rstudio/), but you do not have to.
-
-- Create a new R Markdown document from the menu `File -> New File -> R Markdown -> From Template -> Ninja Presentation`;<sup>1</sup>
-
---
-
-- Click the `Knit` button to compile it;
-
---
-
-- or use the [RStudio Addin](https://rstudio.github.io/rstudioaddins/)<sup>2</sup> "Infinite Moon Reader" to live preview the slides (every time you update and save the Rmd document, the slides will be automatically reloaded in RStudio Viewer.
-
-.footnote[
-[1] 中文用户请看[这份教程](https://slides.yihui.org/xaringan/zh-CN.html)
-
-[2] See [#2](https://github.com/yihui/xaringan/issues/2) if you do not see the template or addin in RStudio.
-]
+</center>
 
 ---
-background-image: url(`r xaringan:::karl`)
-background-position: 50% 50%
-class: center, bottom, inverse
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
 
-# You only live once!
+<h2><b>The Narcan Story</b></h2>
 
----
 
-# Hello Ninja
+<center><img src= "images/narcan.png" height = "300px"><br><br>
+<b><i><font color = "#0B82B9">0,1,2,3 are numbers...right?</font></i></b><br><br>
 
-As a presentation ninja, you certainly should not be satisfied by the "Hello World" example. You need to understand more about two things:
 
-1. The [remark.js](https://remarkjs.com) library;
-
-1. The **xaringan** package;
-
-Basically **xaringan** injected the chakra of R Markdown (minus Pandoc) into **remark.js**. The slides are rendered by remark.js in the web browser, and the Markdown source needed by remark.js is generated from R Markdown (**knitr**).
+</center>
 
 ---
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
 
-# remark.js
+<h2><b>The Narcan Story</b></h2>
 
-You can see an introduction of remark.js from [its homepage](https://remarkjs.com). You should read the [remark.js Wiki](https://github.com/gnab/remark/wiki) at least once to know how to
 
-- create a new slide (Markdown syntax<sup>*</sup> and slide properties);
+<center><img src= "images/narcan.png" height = "300px"><br><br>
+<b><i><font color = "#0B82B9">"4+" is not...</font></i></b><br><br>
 
-- format a slide (e.g. text alignment);
 
-- configure the slideshow;
+</center>
 
-- and use the presentation (keyboard shortcuts).
 
-It is important to be familiar with remark.js before you can understand the options in **xaringan**.
-
-.footnote[[*] It is different with Pandoc's Markdown! It is limited but should be enough for presentation purposes. Come on... You do not need a slide for the Table of Contents! Well, the Markdown support in remark.js [may be improved](https://github.com/gnab/remark/issues/142) in the future.]
 
 ---
-background-image: url(`r xaringan:::karl`)
-background-size: cover
-class: center, bottom, inverse
+class: light, animated, fadeIn
 
-# I was so happy to have discovered remark.js!
+<h1><span>First Encounters in the "Wild"</span></h1>
 
----
-class: inverse, middle, center
+<center><br><br><br>
+<p><i><font size = "48px">"The first step to building a data pipeline in R, <font color = "#0B82B9">is to <b>NOT</b> open R.</font>"</font></i></p>
+</center>
 
-# Using xaringan
 
----
 
-# xaringan
-
-Provides an R Markdown output format `xaringan::moon_reader` as a wrapper for remark.js, and you can use it in the YAML metadata, e.g.
-
-```yaml
----
-title: "A Cool Presentation"
-output:
-  xaringan::moon_reader:
-    yolo: true
-    nature:
-      autoplay: 30000
----
-```
-
-See the help page `?xaringan::moon_reader` for all possible options that you can use.
 
 ---
+class: light, animated, fadeIn
+<h1><span>First Encounters in the "Wild"</span></h1>
 
-# remark.js vs xaringan
 
-Some differences between using remark.js (left) and using **xaringan** (right):
+<img src="images/patches.png" alt="A picture of a black dog laying on a bed and partially covering an open laptop." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
-.pull-left[
-1. Start with a boilerplate HTML file;
+<p style="float: right;"><h3><b>What I learned about First Encounters:</b></h3>
 
-1. Plain Markdown;
+ <ul><li>Don't do any "real" coding</li><br>
+     <li>Ask for code books.</li><br>
+     <li>Understand the data's environment.</li><br>
+     <li>Make the stakeholder tell you what they want.</li><br>
 
-1. Write JavaScript to autoplay slides;
+     
+???
+About first encounters when presented with the task of creating a data pipeline...
+"real" coding is bad, quick/dirty coding that will help you form question/investigate is good and should not take too much effort unless you're learning as you go. The difficulty should not come because you're trying to do advanced stuff. Do the bare minimum to give you clues/info you need to start asking questions
 
-1. Manually configure MathJax;
-
-1. Highlight code with `*`;
-
-1. Edit Markdown source and refresh browser to see updated slides;
-]
-
-.pull-right[
-1. Start with an R Markdown document;
-
-1. R Markdown (can embed R/other code chunks);
-
-1. Provide an option `autoplay`;
-
-1. MathJax just works;<sup>*</sup>
-
-1. Highlight code with `{{}}`;
-
-1. The RStudio addin "Infinite Moon Reader" automatically refreshes slides on changes;
-]
-
-.footnote[[*] Not really. See next page.]
+<br>
+The first part of creating data pipelines, is to not even think about coding, modeling, or anything advanced like that. Coding, analyzes, and etc are things that have to happen to the data. It's hard to know how to correctly work with and apply actions to data without understanding the data. You need to first understand the pieces you're working with. Failing to do this, and just jumping head first makes the process harder, and can put an unnecessary layer of difficulty on to your vision and perspective of the project that's in front you. Taking the time to take a step back and go through an iterative process of asking questions and understanding the environment the data exists is can give a bit more clarity and focus as you begin to start creating a data pipeline.
 
 ---
+class: dark, center, middle, animated, fadeIn
 
-# Math Expressions
+<img src= "images/initial_dream.png", width = "100%", height = "100%">
 
-You can write LaTeX math expressions inside a pair of dollar signs, e.g. &#36;\alpha+\beta$ renders $\alpha+\beta$. You can use the display style with double dollar signs:
+???
+With no info of data, process or anything, what this looks like going head first.
+---
+class: dark, center, middle, animated, fadeIn
 
-```
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
-```
 
-$$\bar{X}=\frac{1}{n}\sum_{i=1}^nX_i$$
+<img src= "images/pl_2.png", width = "100%", height = "100%">
 
-Limitations:
+???
+Taking the time to investigate will give you some clarity. When you start to get clarity, things can become clearer. Mind you that things are still messy, but a little bit of clarity can give you just enough to continue refining and building processes. Once you accept the fact that you need to do all of this investigation, and also accept the fact that investigations are an iterative process you are NEVER done with, you can start to realize you need more structure. It's at this point that it's safe to start building out the foundation of the pipeline
 
-1. The source code of a LaTeX math expression must be in one line, unless it is inside a pair of double dollar signs, in which case the starting `$$` must appear in the very beginning of a line, followed immediately by a non-space character, and the ending `$$` must be at the end of a line, led by a non-space character;
-
-1. There should not be spaces after the opening `$` or before the closing `$`.
-
-1. Math does not work on the title slide (see [#61](https://github.com/yihui/xaringan/issues/61) for a workaround).
 
 ---
+class: light, animated, fadeIn
 
-# R Code
+<h1><span>The Timeline</span></h1>
 
-```{r comment='#'}
-# a boring regression
-fit = lm(dist ~ 1 + speed, data = cars)
-coef(summary(fit))
-dojutsu = c('地爆天星', '天照', '加具土命', '神威', '須佐能乎', '無限月読')
-grep('天', dojutsu, value = TRUE)
-```
+<center><img src= "images/tl_3.png", width = "100%"></center>
+
+???
+by introducing actual structure to the process now.
 
 ---
+class: light, animated, fadeIn
 
-# R Plots
+<h1><span>Structures</span></h1>
 
-```{r cars, fig.height=4, dev='svg'}
-par(mar = c(4, 4, 1, .1))
-plot(cars, pch = 19, col = 'darkgray', las = 1)
-abline(fit, lwd = 2)
-```
+<center><br><br><br>
+<p><i><font size = "48px">"Data pipelines can exist in two environments that co-exist together; <font color = "#0B82B9"> <b>external</b> and <b>internal</b> environments.</font>"</font></i></p>
+</center>
 
----
-
-# Tables
-
-If you want to generate a table, make sure it is in the HTML format (instead of Markdown or other formats), e.g.,
-
-```{r}
-knitr::kable(head(iris), format = 'html')
-```
+???
+probably theories and ways to break this down even further, but in my experience, being that it was my first time building a pipeline, it was more digestible for me to think about it as two environments at the time.
 
 ---
+class: light, animated, fadeIn
 
-# HTML Widgets
+<h1><span>Structures</span></h1>
 
-I have not thoroughly tested HTML widgets against **xaringan**. Some may work well, and some may not. It is a little tricky.
+<img src="images/external.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
-Similarly, the Shiny mode (`runtime: shiny`) does not work. I might get these issues fixed in the future, but these are not of high priority to me. I never turn my presentation into a Shiny app. When I need to demonstrate more complicated examples, I just launch them separately. It is convenient to share slides with other people when they are plain HTML/JS applications.
+<p style="float: right;"><h2><b>External Environment</b></h2>
 
-See the next page for two HTML widgets.
-
----
-
-```{r out.width='100%', fig.height=6, eval=require('leaflet')}
-library(leaflet)
-leaflet() %>% addTiles() %>% setView(-93.65, 42.0285, zoom = 17)
-```
-
----
-
-```{r eval=require('DT'), tidy=FALSE}
-DT::datatable(
-  head(iris, 10),
-  fillContainer = FALSE, options = list(pageLength = 8)
-)
-```
+ <ul><li>Data interactions, decisions, and processes that exist <b>externally</b> to your system.</li><br>
+     <li>Administrative policies that affect the flow of data</li><br>
+     <li>Technology that is used for data collection outside of R</li><br>
+     <li>Data literacy of stakeholders and co-workers</li></ul></p>
+     
+???
+Important to do this first. This can and has overlapped with the investigation process mentioned earlier. More data sources you have, more involved the process is. Knowing all I could about the external environment, helped guide what the structure would look like internally.
 
 ---
+class: light, animated, fadeIn
 
-# Some Tips
+<h1><span>Structures</span></h1>
 
-- Do not forget to try the `yolo` option of `xaringan::moon_reader`.
+<img src="images/internal.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        yolo: true
-    ```
+<p style="float: right;"><h2><b>Internal Environment</b></h2>
 
----
-
-# Some Tips
-
-- Slides can be automatically played if you set the `autoplay` option under `nature`, e.g. go to the next slide every 30 seconds in a lightning talk:
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          autoplay: 30000
-    ```
-
-- If you want to restart the play after it reaches the last slide, you may set the sub-option `loop` to TRUE, e.g.,
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          autoplay:
-            interval: 30000
-            loop: true
-    ```
+ <ul><li>Actual file structure and data flow <b>internally</b> on your system</li><br>
+     <li>Flow of logic for data processing, analysis, and deliverable creation/deployment</li><br>
+     <li>Method of data security and storage processes</li></ul></p>
+     
+???
+probably theories and ways to break this down even further, but in my experience, being that it was my first time building a pipeline, it was more digestible for me to think about it as two environments at the time.
+<br><br>
+Naloxtrac example file structure example next
 
 ---
+class: light, animated, fadeIn
 
-# Some Tips
+<h1><span>The Timeline</span></h1>
 
-- A countdown timer can be added to every page of the slides using the `countdown` option under `nature`, e.g. if you want to spend one minute on every page when you give the talk, you can set:
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          countdown: 60000
-    ```
-
-    Then you will see a timer counting down from `01:00`, to `00:59`, `00:58`, ... When the time is out, the timer will continue but the time turns red.
-    
+<center><img src= "images/tl_4.png", width = "100%"></center>
 ---
+class: light, animated, fadeIn
 
-# Some Tips
+<h1><span>The Timeline</span></h1>
 
-- The title slide is created automatically by **xaringan**, but it is just another remark.js slide added before your other slides.
-
-    The title slide is set to `class: center, middle, inverse, title-slide` by default. You can change the classes applied to the title slide with the `titleSlideClass` option of `nature` (`title-slide` is always applied).
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          titleSlideClass: [top, left, inverse]
-    ```
-    
---
-
-- If you'd like to create your own title slide, disable **xaringan**'s title slide with the `seal = FALSE` option of `moon_reader`.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        seal: false
-    ```
-
+<center><img src= "images/tl_5.png", width = "100%"></center>
 ---
+class: light, animated, fadeIn
 
-# Some Tips
+<h1><span>The Timeline</span></h1>
 
-- There are several ways to build incremental slides. See [this presentation](https://slides.yihui.org/xaringan/incremental.html) for examples.
+<center><img src= "images/tl_6.png", width = "100%"></center>
 
-- The option `highlightLines: true` of `nature` will highlight code lines that start with `*`, or are wrapped in `{{ }}`, or have trailing comments `#<<`;
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          highlightLines: true
-    ```
-
-    See examples on the next page.
-
----
-
-# Some Tips
-
-
-.pull-left[
-An example using a leading `*`:
-
-    ```r
-    if (TRUE) {
-    ** message("Very important!")
-    }
-    ```
-Output:
-```r
-if (TRUE) {
-* message("Very important!")
-}
-```
-
-This is invalid R code, so it is a plain fenced code block that is not executed.
-]
-
-.pull-right[
-An example using `{{}}`:
-
-````
-`r ''````{r tidy=FALSE}
-if (TRUE) {
-*{{ message("Very important!") }}
-}
-```
-````
-Output:
-```{r tidy=FALSE}
-if (TRUE) {
-{{ message("Very important!") }}
-}
-```
-
-It is valid R code so you can run it. Note that `{{}}` can wrap an R expression of multiple lines.
-]
-
----
-
-# Some Tips
-
-An example of using the trailing comment `#<<` to highlight lines:
-
-````markdown
-`r ''````{r tidy=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
-````
-
-Output:
-
-```{r tidy=FALSE, eval=FALSE}
-library(ggplot2)
-ggplot(mtcars) + 
-  aes(mpg, disp) + 
-  geom_point() +   #<<
-  geom_smooth()    #<<
-```
-
----
-
-# Some Tips
-
-When you enable line-highlighting, you can also use the chunk option `highlight.output` to highlight specific lines of the text output from a code chunk. For example, `highlight.output = TRUE` means highlighting all lines, and `highlight.output = c(1, 3)` means highlighting the first and third line.
-
-````md
-`r ''````{r, highlight.output=c(1, 3)}
-head(iris)
-```
-````
-
-```{r, highlight.output=c(1, 3), echo=FALSE}
-head(iris)
-```
-
-Question: what does `highlight.output = c(TRUE, FALSE)` mean? (Hint: think about R's recycling of vectors)
-
----
-
-# Some Tips
-
-- To make slides work offline, you need to download a copy of remark.js in advance, because **xaringan** uses the online version by default (see the help page `?xaringan::moon_reader`).
-
-- You can use `xaringan::summon_remark()` to download the latest or a specified version of remark.js. By default, it is downloaded to `libs/remark-latest.min.js`.
-
-- Then change the `chakra` option in YAML to point to this file, e.g.
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        chakra: libs/remark-latest.min.js
-    ```
-
-- If you used Google fonts in slides (the default theme uses _Yanone Kaffeesatz_, _Droid Serif_, and _Source Code Pro_), they won't work offline unless you download or install them locally. The Heroku app [google-webfonts-helper](https://google-webfonts-helper.herokuapp.com/fonts) can help you download fonts and generate the necessary CSS.
-
----
-
-# Macros
-
-- remark.js [allows users to define custom macros](https://github.com/yihui/xaringan/issues/80) (JS functions) that can be applied to Markdown text using the syntax `![:macroName arg1, arg2, ...]` or `![:macroName arg1, arg2, ...](this)`. For example, before remark.js initializes the slides, you can define a macro named `scale`:
-
-    ```js
-    remark.macros.scale = function (percentage) {
-      var url = this;
-      return '<img src="' + url + '" style="width: ' + percentage + '" />';
-    };
-    ```
-
-    Then the Markdown text
-
-    ```markdown
-    ![:scale 50%](image.jpg)
-    ```
-
-    will be translated to
-    
-    ```html
-    <img src="image.jpg" style="width: 50%" />
-    ```
-
----
-
-# Macros (continued)
-
-- To insert macros in **xaringan** slides, you can use the option `beforeInit` under the option `nature`, e.g.,
-
-    ```yaml
-    output:
-      xaringan::moon_reader:
-        nature:
-          beforeInit: "macros.js"
-    ```
-
-    You save your remark.js macros in the file `macros.js`.
-
-- The `beforeInit` option can be used to insert arbitrary JS code before `remark.create()`. Inserting macros is just one of its possible applications.
-
----
-
-# CSS
-
-Among all options in `xaringan::moon_reader`, the most challenging but perhaps also the most rewarding one is `css`, because it allows you to customize the appearance of your slides using any CSS rules or hacks you know.
-
-You can see the default CSS file [here](https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css). You can completely replace it with your own CSS files, or define new rules to override the default. See the help page `?xaringan::moon_reader` for more information.
-
----
-
-# CSS
-
-For example, suppose you want to change the font for code from the default "Source Code Pro" to "Ubuntu Mono". You can create a CSS file named, say, `ubuntu-mono.css`:
-
-```css
-@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
-
-.remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
-```
-
-Then set the `css` option in the YAML metadata:
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: ["default", "ubuntu-mono.css"]
-```
-
-Here I assume `ubuntu-mono.css` is under the same directory as your Rmd.
-
-See [yihui/xaringan#83](https://github.com/yihui/xaringan/issues/83) for an example of using the [Fira Code](https://github.com/tonsky/FiraCode) font, which supports ligatures in program code.
-
----
-
-# CSS (with Sass)
-
-**xaringan** also supports Sass support via **rmarkdown**. Suppose you want to use the same color for different elements, e.g., first heading and bold text. You can create a `.scss` file, say `mytheme.scss`, using the [sass](https://sass-lang.com/) syntax with variables:
-
-```scss
-$mycolor: #ff0000; 
-.remark-slide-content > h1 { color: $mycolor; }
-.remark-slide-content strong { color: $mycolor; }
-```
-
-Then set the `css` option in the YAML metadata using this file placed under the same directory as your Rmd:
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: ["default", "mytheme.scss"]
-```
-
-This requires **rmarkdown** >= 2.8 and the [**sass**](https://rstudio.github.io/sass/) package. You can learn more about **rmarkdown** and **sass** support in [this blog post](https://blog.rstudio.com/2021/04/15/2021-spring-rmd-news/#sass-and-scss-support-for-html-based-output) and in [**sass** overview vignette](https://rstudio.github.io/sass/articles/sass.html).
-
----
-
-# Themes
-
-Don't want to learn CSS? Okay, you can use some user-contributed themes. A theme typically consists of two CSS files `foo.css` and `foo-fonts.css`, where `foo` is the theme name. Below are some existing themes:
-
-```{r, R.options=list(width = 70)}
-names(xaringan:::list_css())
-```
-
----
-
-# Themes
-
-To use a theme, you can specify the `css` option as an array of CSS filenames (without the `.css` extensions), e.g.,
-
-```yaml
-output:
-  xaringan::moon_reader:
-    css: [default, metropolis, metropolis-fonts]
-```
-
-If you want to contribute a theme to **xaringan**, please read [this blog post](https://yihui.org/en/2017/10/xaringan-themes).
-
----
-class: inverse, middle, center
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/39/Naruto_Shiki_Fujin.svg)
-background-size: contain
-
-# Naruto
-
----
-background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
-background-size: 100px
-background-position: 90% 8%
-
-# Sharingan
-
-The R package name **xaringan** was derived<sup>1</sup> from **Sharingan**, a dōjutsu in the Japanese anime _Naruto_ with two abilities:
-
-- the "Eye of Insight"
-
-- the "Eye of Hypnotism"
-
-I think a presentation is basically a way to communicate insights to the audience, and a great presentation may even "hypnotize" the audience.<sup>2,3</sup>
-
-.footnote[
-[1] In Chinese, the pronounciation of _X_ is _Sh_ /ʃ/ (as in _shrimp_). Now you should have a better idea of how to pronounce my last name _Xie_.
-
-[2] By comparison, bad presentations only put the audience to sleep.
-
-[3] Personally I find that setting background images for slides is a killer feature of remark.js. It is an effective way to bring visual impact into your presentations.
-]
-
----
-
-# Naruto terminology
-
-The **xaringan** package borrowed a few terms from Naruto, such as
-
-- [Sharingan](https://naruto.fandom.com/wiki/Sharingan) (写輪眼; the package name)
-
-- The [moon reader](https://naruto.fandom.com/wiki/Moon_Reader) (月読; an attractive R Markdown output format)
-
-- [Chakra](https://naruto.fandom.com/wiki/Chakra) (查克拉; the path to the remark.js library, which is the power to drive the presentation)
-
-- [Nature transformation](https://naruto.fandom.com/wiki/Nature_Transformation) (性質変化; transform the chakra by setting different options)
-
-- The [infinite moon reader](https://naruto.fandom.com/wiki/Infinite_Tsukuyomi) (無限月読; start a local web server to continuously serve your slides)
-
-- The [summoning technique](https://naruto.fandom.com/wiki/Summoning_Technique) (download remark.js from the web)
-
-You can click the links to know more about them if you want. The jutsu "Moon Reader" may seem a little evil, but that does not mean your slides are evil.
-
----
-
-class: center
-
-# Hand seals (印)
-
-Press `h` or `?` to see the possible ninjutsu you can use in remark.js.
-
-![](https://upload.wikimedia.org/wikipedia/commons/7/7e/Mudra-Naruto-KageBunshin.svg)
-
----
-
-class: center, middle
-
-# Thanks!
-
-Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).
-
-The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](https://yihui.org/knitr/), and [R Markdown](https://rmarkdown.rstudio.com).

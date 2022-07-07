@@ -27,7 +27,7 @@
   line-height: 1em;
   padding: 8px 0;
   font-family: 'Quicksand', sans-serif;
-  font-size: 24px;
+  font-size: 30px;
   font-style: italic;
   text-align: left;
 }
@@ -37,10 +37,10 @@
   line-height: 1em;
   background-image: url(../images/header_back.png);
   background-repeat: no-repeat;
-  background-size: 35% 100%;
+  background-size: 60% 100%;
   padding: 8px 0;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 28px;
   text-align: left;
   
 }
@@ -51,6 +51,121 @@
     opacity: 1;
     position: absolute;
     left: 3%;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Quicksand', sans-serif;
 }
+
+
+/* CSS themeing for Dark Slides */
+/* Background Image and text */
+.dark {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  background-color: #000000;
+}
+
+/* Slide Header */
+.dark h1 span {
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url(../images/header_back.png);
+  background-repeat: no-repeat;
+  background-size: 60% 100%;
+  width: auto;
+  padding: 3px;
+}
+
+/* Link Formatting */
+
+.dark a:link {
+  color: white;
+  vertical-align: middle;
+}
+
+.dark a:visted {
+  color: white;
+  vertical-align: middle;
+}
+
+/* Slide Numbers */
+.dark .remark-slide-number {
+    bottom: 7px;
+    opacity: 1;
+    position: absolute;
+    right: 2px;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+/* CSS Themeing for Light Slides */
+
+/* Background image and text */
+.light {
+  color: #000000;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 28px;
+  background-image: url(../images/light_back.png);
+  background-size: cover;
+}
+
+/* Slide Header */
+.light h1 span {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  background-image: url(../images/header_back_light.png);
+  background-size: 100%;
+  background-color: #212121;
+  width: auto;
+  padding: 3px;
+}
+
+.light li  {
+  margin-left: 250px;
+  font-size:26px;
+}
+
+
+/* Link Formatting */
+.light a:link {
+  color: black;
+  vertical-align: middle;
+}
+
+.light a:visited {
+  color: black;
+  vertical-align: middle;
+}
+
+/* Slide Number */
+.light .remark-slide-number {
+    bottom: 7px;
+    opacity: 1;
+    position: absolute;
+    right: 2px;
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+}
+
+/* Special Border for gifs */
+
+.gif {
+    padding: 1rem 2rem;
+    display: inline-block;
+    border: 3px solid #333333;
+    font-size: 2.5rem;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    background: #ffffff;
+    position: relative;
+    
+    &::before {
+        content: '';
+        border: 2px solid #353535;
+        display: block;
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+        border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+    }
