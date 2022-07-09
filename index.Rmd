@@ -34,9 +34,9 @@ When you see this image... Does it make you feel anything? Any ideas on what it 
 
 
 <br><br>
-Well, this is my personal, 100% accurate representation of a data pipeline. Now you're probably thinking I'm out of my mind, and I might be, but hear me out. Of course this isn't an actual data pipeline, but rather the mental image and feelings I had when I was in my last position as a Data specialist and was task with creating a data pipeline from scratch. 
+Well, this is my personal, 100% accurate representation of a data pipeline. Now you're probably thinking I'm out of my mind, and I might be, but hear me out. Of course this isn't an actual data pipeline, but rather the mental image and feelings I had in my last position as a Data specialist when I was tasked with creating a data pipeline from scratch. 
 <br><br>
-The story I want to tell you all today is about how I created a data pipeline in R from scratch, but more specifically with the context of me being a self-taught R programmer in my first ever official data position.
+The story I want to tell you all today is about how I created that pipeline in R within the context of me being a self-taught R programmer in my first professional data position.
 <br><br>
 Those of us that work in data, when we think of data pipelines, it might look something more like this...
 ---
@@ -49,80 +49,65 @@ The "Perfect" Data Pipeline:
 Nice clear proccess, clean structures, with great results
 <br>
 <br>
-This is a pipeline to most of us, but in this last position I was in, the pipeline looked nothing like that at all. If we could say there was any pipeline, it was very manual, very clunky. So although I do have this story to tell, I've broken it up into the following themes:
----
-class: dark, center, middle, animated, fadeIn
-# Make a new visual showing a "flowchart" of the story
--First Encounters
--Structures
--Data Validation
--Sustainability
-
-
-<h1><span>The Timeline</span></h1>
-
-<center><img src= "images/tl_1.png", width = "100%"></center>
-
-???
-Once during my first week of work when I had my first encounters with the data in this pipeline, and once again when I put in my formal resignation for this position about a month ago.
-<br>
-<br>
-You're probably wondering how this is even possible, maybe even saying to yourself "man, if her pipeline looked like that, no wonder she quit". <br>
-<br>
-Well, I'm gonna tell you all about it, but first, we need to go back to the beginnings..
+This is a pipeline to most of us, but in this last position I was in, the pipeline looked nothing like that at all. If we could say there was any pipeline, it was very manual, very clunky, no structure, no automation, just vibes and recklessness. So although I learned a lot and have alot to share, I don't have a lot of time to talk today, so I pulled out four main points that I learned about creating pipelines during this journey.
 ---
 class: light, animated, fadeIn
 
-<h1><span>The Timeline</span></h1>
-
-<center><img src= "images/tl_2.png", width = "100%"></center>
+<h1><span>Main Points</span></h1>
+<br><br>
+<center><img src= "images/mainpoints.png", width = "100%"></center>
 
 ???
-Back to that first day, week, and months of "real" work...
+-My first encounters with the data in this pipeline<br>
+-The importance of identifying the environmental structures of the data pipeline<br>
+-Embedding validations within the data pipeline<br>
+-Understanding what sustainability looks like for the data pipeline
+
 
 ---
 class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
+
+<h1><span>Main Points</span></h1>
+<br><br>
+<center><img src= "images/mp_1.png", width = "100%"></center>
+
+???
+So I think the best things for me to do is go back to the beginning, during those first days, weeks, and months of working in this position.
+<br><br>
+Now I know, I'm going to sound like I'm out of my mind again, but guys, the very first thing I learned during my first encounters in this journey was that...
+
+---
+class: light, animated, fadeIn
+
+<h1><span>First Encounters</span></h1>
+
+<center><br><br><br>
+<p><i><font size = "48px">"The first step to building a data pipeline in R, <font color = "#0B82B9">is to <b>NOT</b> open R.</font>"</font></i></p>
+</center>
+
+
+---
+class: light, animated, fadeIn
+<h1><span>First Encounters</span></h1>
 
 <img src="images/me.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
 <p style="float: right;"><h2><b>Some Facts:</b></h2>
-
- <ul><li>Self-Taught + 1<sup>st</sup> Data Position = "Impostor Syndrome"</li><br>
-     <li>Data dealt with opioid-related topics.</li><br>
-     <li>Organization did not have any pipelines.</li><br>
-     <li>Organization's expectations weren't clear...</li></ul></p>
+ <ul><li>Unfamiliar subject matter - opioid data</li><br>
+     <li>A lot of data existed everywhere</li><br>
+     <li>Organization did not have any pipelines</li><br>
+     <li>Organization's expectations weren't clear</li><br>
+    <li>No direction was given...</li></ul></p>
      
 ???
-There's hope in those eyes..
 Some facts about how it was starting in this position...
-Expectations weren't clear...bc non-existent
+There's hope in those eyes even though this was my first official data position, I was self-taught and had imposter syndrome also ->> humility<br>
+Expectations weren't clear...bc non-existent. My stakeholder didn't know what they wanted exactly<br>
+I have all of this unstructured data, no guides, no anything, what did I do?
 
 ---
 class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
-<center>
-
-<h2><b>Expectations...</b></h2>
-
-<img class = "gif"; src="images/glasses-computer.gif" width = "450px">
-
-</center>
-
----
-class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
-<center>
-
-<h2><b>Reality...</b></h2>
-
-<img class = "gif"; src="images/steve-harvey-scared.gif" width = "450px">
-
-</center>
-
----
-class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
+<h1><span>First Encounters</span></h1>
 
 <h2><b>So What Did I Do?</b></h2>
 
@@ -135,7 +120,7 @@ Jumped in head-first of course! Because what else was I going to do? I'm new, I 
 
 ---
 class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
+<h1><span>First Encounters</span></h1>
 
 <h3><b>What I did vs. <font color = "#0B82B9"><i>What I Should Have Done</i></font></b></h3>
 
@@ -149,65 +134,41 @@ class: light, animated, fadeIn
 
 ---
 class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
+<h1><span>First Encounters</span></h1>
 
 <h2><b>The Narcan Story</b></h2>
 
 
-<center><img src= "images/narcan.png" height = "300px"><br><br>
-<b><i><font color = "#0B82B9">0,1,2,3 are numbers...right?</font></i></b><br><br>
-
+<center><img src= "images/narcan.png" height = "200px"><br><br>
+--
+<b><i><font color = "#0B82B9">0,1,2,3 are numbers...right?</font></i></b><br>
+--
+<b><i><font color = "#5c0e0b">🚨"4+" is not...🚨</font></i></b><br><br>
 
 </center>
 
 ---
 class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
-
-<h2><b>The Narcan Story</b></h2>
-
-
-<center><img src= "images/narcan.png" height = "300px"><br><br>
-<b><i><font color = "#0B82B9">"4+" is not...</font></i></b><br><br>
-
-
-</center>
-
-
-
----
-class: light, animated, fadeIn
-
-<h1><span>First Encounters in the "Wild"</span></h1>
-
-<center><br><br><br>
-<p><i><font size = "48px">"The first step to building a data pipeline in R, <font color = "#0B82B9">is to <b>NOT</b> open R.</font>"</font></i></p>
-</center>
-
-
-
-
----
-class: light, animated, fadeIn
-<h1><span>First Encounters in the "Wild"</span></h1>
+<h1><span>First Encounters</span></h1>
 
 
 <img src="images/patches.png" alt="A picture of a black dog laying on a bed and partially covering an open laptop." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
 <p style="float: right;"><h3><b>What I learned about First Encounters:</b></h3>
 
- <ul><li>Don't do any "real" coding</li><br>
-     <li>Ask for code books.</li><br>
-     <li>Understand the data's environment.</li><br>
-     <li>Make the stakeholder tell you what they want.</li><br>
+ <ul><li>Don't do any "real" coding...yet</li><br>
+     <li>Ask for code books</li><br>
+     <li>Understand the data's environment</li><br>
+     <li>Understand the organization's environment</li><br>
+     <li>Try to start creating "metadata"</li></ul>
 
      
 ???
 About first encounters when presented with the task of creating a data pipeline...
-"real" coding is bad, quick/dirty coding that will help you form question/investigate is good and should not take too much effort unless you're learning as you go. The difficulty should not come because you're trying to do advanced stuff. Do the bare minimum to give you clues/info you need to start asking questions
+jumping to "real" coding is bad, quick/dirty coding that will help you form question/investigate is good and should not take too much effort unless you're learning as you go. The difficulty should not come because you're trying to do advanced stuff. Do the bare minimum to give you clues/info you need to start asking questions about not only the data but the organization in which it comes from as well. You can also document this early process by making a rough version of metadata. Where you track where data is coming from, what's in the data, who handles the data, etc.
 
 <br>
-The first part of creating data pipelines, is to not even think about coding, modeling, or anything advanced like that. Coding, analyzes, and etc are things that have to happen to the data. It's hard to know how to correctly work with and apply actions to data without understanding the data. You need to first understand the pieces you're working with. Failing to do this, and just jumping head first makes the process harder, and can put an unnecessary layer of difficulty on to your vision and perspective of the project that's in front you. Taking the time to take a step back and go through an iterative process of asking questions and understanding the environment the data exists is can give a bit more clarity and focus as you begin to start creating a data pipeline.
+A hard lesson I eventually learned was that taking the time to take a step back and go through an iterative process of asking questions can give a bit more clarity and focus as you begin to start creating a data pipeline. This is so much more important than just rushing to open RStudio because if you jump in with no information, head first, that pipeline can figuratively look and feel like this...
 
 ---
 class: dark, center, middle, animated, fadeIn
@@ -215,7 +176,7 @@ class: dark, center, middle, animated, fadeIn
 <img src= "images/initial_dream.png", width = "100%", height = "100%">
 
 ???
-With no info of data, process or anything, what this looks like going head first.
+but...
 ---
 class: dark, center, middle, animated, fadeIn
 
@@ -223,35 +184,45 @@ class: dark, center, middle, animated, fadeIn
 <img src= "images/pl_2.png", width = "100%", height = "100%">
 
 ???
-Taking the time to investigate will give you some clarity. When you start to get clarity, things can become clearer. Mind you that things are still messy, but a little bit of clarity can give you just enough to continue refining and building processes. Once you accept the fact that you need to do all of this investigation, and also accept the fact that investigations are an iterative process you are NEVER done with, you can start to realize you need more structure. It's at this point that it's safe to start building out the foundation of the pipeline
+Taking the time to investigate will give you some clarity. When you start to get clarity, things can become clearer. Mind you that things are still messy, but a little bit of clarity can give you just enough to continue refining and building processes. Once you accept the fact that you need to iteratively investigate and start gaining some clarity, it's safe to start building out the foundation of the pipeline...
 
 
 ---
 class: light, animated, fadeIn
 
-<h1><span>The Timeline</span></h1>
-
-<center><img src= "images/tl_3.png", width = "100%"></center>
+<h1><span>Main Points</span></h1>
+<br><br>
+<center><img src= "images/mp_2.png", width = "100%"></center>
 
 ???
-by introducing actual structure to the process now.
+by introducing actual environmental structure to the process now.
 
 ---
 class: light, animated, fadeIn
 
-<h1><span>Structures</span></h1>
+<h1><span>Environmental Structures</span></h1>
 
 <center><br><br><br>
 <p><i><font size = "48px">"Data pipelines can exist in two environments that co-exist together; <font color = "#0B82B9"> <b>external</b> and <b>internal</b> environments.</font>"</font></i></p>
 </center>
 
 ???
-probably theories and ways to break this down even further, but in my experience, being that it was my first time building a pipeline, it was more digestible for me to think about it as two environments at the time.
+probably more sophisticated theories and ways to break this concept down even further, but being that it was my first time building a pipeline, it was more digestible for me to think about this concept as simply stating that a data pipeline has two environments that coexist and build off of each other.
 
 ---
 class: light, animated, fadeIn
 
-<h1><span>Structures</span></h1>
+<h1><span>Environmental Structures</span></h1>
+
+<center><img src= "images/internal_external.png", height = 450px></center>
+
+???
+So when starting out this was kinda what I realized mentally. That in wading through all of this data and trying to create structure I had external things to worry about outside of my computer, and internal things to worry about inside of my computer. To further explain this simplification..
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
 
 <img src="images/external.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
@@ -260,15 +231,15 @@ class: light, animated, fadeIn
  <ul><li>Data interactions, decisions, and processes that exist <b>externally</b> to your system.</li><br>
      <li>Administrative policies that affect the flow of data</li><br>
      <li>Technology that is used for data collection outside of R</li><br>
-     <li>Data literacy of stakeholders and co-workers</li></ul></p>
+     <li>Data literacy of stakeholders and co-workers</li></ul></p><br>
      
 ???
-Important to do this first. This can and has overlapped with the investigation process mentioned earlier. More data sources you have, more involved the process is. Knowing all I could about the external environment, helped guide what the structure would look like internally.
+In my xp, it was important to ID the external environment first. This overlapped with the investigation process mentioned earlier. More data sources you have, more involved the process is. Knowing all I could about the external environment, helped guide what the structure would look like internally.
 
 ---
 class: light, animated, fadeIn
 
-<h1><span>Structures</span></h1>
+<h1><span>Environmental Structures</span></h1>
 
 <img src="images/internal.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
@@ -279,26 +250,45 @@ class: light, animated, fadeIn
      <li>Method of data security and storage processes</li></ul></p>
      
 ???
-probably theories and ways to break this down even further, but in my experience, being that it was my first time building a pipeline, it was more digestible for me to think about it as two environments at the time.
+ID internal environment is also essential. understanding the best way to set up your logic in things, nuances of any packages that you are, understanding what packages are essential for minimum functionality, Understanding the output needed for deliverables.<br><br>
+Now, it should go without saying that this is not the reality...
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<center><img src= "images/interactions.png", height = 450px></center>
+
+???
+These environments don't exist in silos. Clearly external things can affect internal things and vice versa...<br>
+This is a challenge that every data person knows well. Even if you don't think about the data's environment in this way, those of you that work in non-profit, academia, or government can probably relate to feeling like some thing in your work is affected by bureaucracy or conflicting interests/decision..<br><br>
+What helped me to better navigate the interactions between the two environments was to iteratively tackle each side by introducing structure, documentation, and workflow processes and adjusting for the other side as needed. You can try your best to account for all of this things at the beginning, but it's hard to know what will influence what every time.
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+#PICK UP HERE# Add examples
+
+<h2><b>Structuring the External Environment</b></h2>
+
+ <ul><li>Data interactions, decisions, and processes that exist <b>externally</b> to your system.</li><br>
+     <li>Administrative policies that affect the flow of data</li><br>
+     <li>Technology that is used for data collection outside of R</li><br>
+     <li>Data literacy of stakeholders and co-workers</li></ul></p><br>
+
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Main Points</span></h1>
 <br><br>
-Naloxtrac example file structure example next
-
+<center><img src= "images/mp_3.png", width = "100%"></center>
 ---
 class: light, animated, fadeIn
 
-<h1><span>The Timeline</span></h1>
-
-<center><img src= "images/tl_4.png", width = "100%"></center>
----
-class: light, animated, fadeIn
-
-<h1><span>The Timeline</span></h1>
-
-<center><img src= "images/tl_5.png", width = "100%"></center>
----
-class: light, animated, fadeIn
-
-<h1><span>The Timeline</span></h1>
-
-<center><img src= "images/tl_6.png", width = "100%"></center>
-
+<h1><span>Main Points</span></h1>
+<br><br>
+<center><img src= "images/mp_4.png", width = "100%"></center>
