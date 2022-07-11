@@ -82,7 +82,7 @@ class: light, animated, fadeIn
 <h1><span>First Encounters</span></h1>
 
 <center><br><br><br>
-<p><i><font size = "48px">"The first step to building a data pipeline in R, <font color = "#0B82B9">is to <b>NOT</b> open R.</font>"</font></i></p>
+<p><i><font size = "48px">"The first step to building a data pipeline in R, <font color = "#A21152">is to <b>NOT</b> open R.</font>"</font></i></p>
 </center>
 
 
@@ -101,7 +101,7 @@ class: light, animated, fadeIn
      
 ???
 Some facts about how it was starting in this position...
-There's hope in those eyes even though this was my first official data position, I was self-taught and had imposter syndrome also ->> humility<br>
+There's hope in those eyes even though this was my first official data position, I was self-taught and had impostor syndrome also ->> humility<br>
 Expectations weren't clear...bc non-existent. My stakeholder didn't know what they wanted exactly<br>
 I have all of this unstructured data, no guides, no anything, what did I do?
 
@@ -122,13 +122,13 @@ Jumped in head-first of course! Because what else was I going to do? I'm new, I 
 class: light, animated, fadeIn
 <h1><span>First Encounters</span></h1>
 
-<h3><b>What I did vs. <font color = "#0B82B9"><i>What I Should Have Done</i></font></b></h3>
+<h3><b>What I did vs. <font color = "#A21152"><i>What I Should Have Done</i></font></b></h3>
 
 <center><br><br><br>
 <b>I tried to create R programs immediately.</b>
 <br><br>
 --
-<b><i><font color = "#0B82B9">I should have started investigating instead.</font></i></b><br><br>
+<b><i><font color = "#A21152">I should have started investigating instead.</font></i></b><br><br>
 
 </center>
 
@@ -141,7 +141,7 @@ class: light, animated, fadeIn
 
 <center><img src= "images/narcan.png" height = "200px"><br><br>
 --
-<b><i><font color = "#0B82B9">0,1,2,3 are numbers...right?</font></i></b><br>
+<b><i><font color = "#A21152">0,1,2,3 are numbers...right?</font></i></b><br>
 --
 <b><i><font color = "#5c0e0b">🚨"4+" is not...🚨</font></i></b><br><br>
 
@@ -270,9 +270,7 @@ class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
 
-#PICK UP HERE# Add examples
-
-<h2><b>Structuring the External Environment</b></h2>
+<h2><b>Examples of Structuring the External Environment</b></h2>
 
  <ul><li>Data interactions, decisions, and processes that exist <b>externally</b> to your system.</li><br>
      <li>Administrative policies that affect the flow of data</li><br>

@@ -17,11 +17,21 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
+.title[
 # Making Data Pipelines in R:
+]
+.subtitle[
 ## A Story From A ‘Self-Taught’ Perspective
+]
+.author[
 ### Meghan Harris, MPH
+]
+.institute[
 ### RStudio::conf(2022) | Washington D.C, U.S
+]
+.date[
 ### 27/07/2022 - July 27th, 2022
+]
 
 ---
 
@@ -87,7 +97,7 @@ class: light, animated, fadeIn
 &lt;h1&gt;&lt;span&gt;First Encounters&lt;/span&gt;&lt;/h1&gt;
 
 &lt;center&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
-&lt;p&gt;&lt;i&gt;&lt;font size = "48px"&gt;"The first step to building a data pipeline in R, &lt;font color = "#0B82B9"&gt;is to &lt;b&gt;NOT&lt;/b&gt; open R.&lt;/font&gt;"&lt;/font&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;&lt;i&gt;&lt;font size = "48px"&gt;"The first step to building a data pipeline in R, &lt;font color = "#A21152"&gt;is to &lt;b&gt;NOT&lt;/b&gt; open R.&lt;/font&gt;"&lt;/font&gt;&lt;/i&gt;&lt;/p&gt;
 &lt;/center&gt;
 
 
@@ -106,7 +116,7 @@ class: light, animated, fadeIn
      
 ???
 Some facts about how it was starting in this position...
-There's hope in those eyes even though this was my first official data position, I was self-taught and had imposter syndrome also -&gt;&gt; humility&lt;br&gt;
+There's hope in those eyes even though this was my first official data position, I was self-taught and had impostor syndrome also -&gt;&gt; humility&lt;br&gt;
 Expectations weren't clear...bc non-existent. My stakeholder didn't know what they wanted exactly&lt;br&gt;
 I have all of this unstructured data, no guides, no anything, what did I do?
 
@@ -127,13 +137,13 @@ Jumped in head-first of course! Because what else was I going to do? I'm new, I 
 class: light, animated, fadeIn
 &lt;h1&gt;&lt;span&gt;First Encounters&lt;/span&gt;&lt;/h1&gt;
 
-&lt;h3&gt;&lt;b&gt;What I did vs. &lt;font color = "#0B82B9"&gt;&lt;i&gt;What I Should Have Done&lt;/i&gt;&lt;/font&gt;&lt;/b&gt;&lt;/h3&gt;
+&lt;h3&gt;&lt;b&gt;What I did vs. &lt;font color = "#A21152"&gt;&lt;i&gt;What I Should Have Done&lt;/i&gt;&lt;/font&gt;&lt;/b&gt;&lt;/h3&gt;
 
 &lt;center&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;
 &lt;b&gt;I tried to create R programs immediately.&lt;/b&gt;
 &lt;br&gt;&lt;br&gt;
 --
-&lt;b&gt;&lt;i&gt;&lt;font color = "#0B82B9"&gt;I should have started investigating instead.&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+&lt;b&gt;&lt;i&gt;&lt;font color = "#A21152"&gt;I should have started investigating instead.&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 
 &lt;/center&gt;
 
@@ -146,7 +156,7 @@ class: light, animated, fadeIn
 
 &lt;center&gt;&lt;img src= "images/narcan.png" height = "200px"&gt;&lt;br&gt;&lt;br&gt;
 --
-&lt;b&gt;&lt;i&gt;&lt;font color = "#0B82B9"&gt;0,1,2,3 are numbers...right?&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
+&lt;b&gt;&lt;i&gt;&lt;font color = "#A21152"&gt;0,1,2,3 are numbers...right?&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;&lt;br&gt;
 --
 &lt;b&gt;&lt;i&gt;&lt;font color = "#5c0e0b"&gt;🚨"4+" is not...🚨&lt;/font&gt;&lt;/i&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
 
@@ -345,6 +355,19 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable
