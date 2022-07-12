@@ -19,7 +19,6 @@ output:
 
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
-xaringanExtra::use_slide_tone()
 xaringanExtra::use_freezeframe(responsive = FALSE)
 ```
 
@@ -333,14 +332,119 @@ class: light, animated, fadeIn
 <center><b>Connect and Chain Where It Makes Sense</b>
 
 ---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/initial_dream.png", width = "100%", height = "100%">
+
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_2.png", width = "100%", height = "100%">
+
+???
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_3.png", width = "100%", height = "100%">
+
+???
+
+---
 class: light, animated, fadeIn
 
 <h1><span>Main Points</span></h1>
 <br><br>
 <center><img src= "images/mp_3.png", width = "100%"></center>
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/initial_dream.png", width = "100%", height = "100%">
+
+???
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_2.png", width = "100%", height = "100%">
+
+???
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_3.png", width = "100%", height = "100%">
+
+???
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_4.png", width = "100%", height = "100%">
+
+???
+
 ---
 class: light, animated, fadeIn
 
 <h1><span>Main Points</span></h1>
 <br><br>
 <center><img src= "images/mp_4.png", width = "100%"></center>
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/initial_dream.png", width = "100%", height = "100%">
+
+???
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_2.png", width = "100%", height = "100%">
+
+???
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_3.png", width = "100%", height = "100%">
+
+???
+
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_4.png", width = "100%", height = "100%">
+
+???
+
+---
+class: dark, center, middle, animated, fadeIn
+
+
+<img src= "images/pl_5.png", width = "100%", height = "100%">
+
+???
