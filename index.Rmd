@@ -28,7 +28,7 @@ class: dark, center, middle, animated, fadeIn
 <img src= "images/initial_dream.png", width = "100%", height = "100%">
 
 ???
-So I have a story to tell you all, but before I get into that, I have a question to ask all of you. You don't have to answer me out loud, but...
+So I have a story to tell you all about making data pipelines in R, but before I get into that, I have a question to ask all of you. You don't have to answer me out loud, but...
 <br><br><br>
 When you see this image... Does it make you feel anything? Any ideas on what it is?
 
@@ -72,7 +72,7 @@ class: light, animated, fadeIn
 <center><img src= "images/mp_1.png", width = "100%"></center>
 
 ???
-So I think the best things for me to do is go back to the beginning, during those first days, weeks, and months of working in this position.
+So I think the best thing for me to do is go back to the beginning, during those first encounters I had with this pipeline's data within this position.
 <br><br>
 Now I know, I'm going to sound like I'm out of my mind again, but guys, the very first thing I learned during my first encounters in this journey was that...
 
@@ -85,7 +85,9 @@ class: light, animated, fadeIn
 <p><i><font size = "48px">"The first step to building a data pipeline in R, <font color = "#A21152">is to <b>NOT</b> open R.</font>"</font></i></p>
 </center>
 
-
+???
+sounds counter-intuitive...<br>
+Let me give you some context..
 ---
 class: light, animated, fadeIn
 <h1><span>First Encounters</span></h1>
@@ -101,9 +103,10 @@ class: light, animated, fadeIn
      
 ???
 Some facts about how it was starting in this position...
-There's hope in those eyes even though this was my first official data position, I was self-taught and had impostor syndrome also ->> humility<br>
-Expectations weren't clear...bc non-existent. My stakeholder didn't know what they wanted exactly<br>
-I have all of this unstructured data, no guides, no anything, what did I do?
+- Not familiar with things<br>
+- Data was everywhere<br>
+- Organization didn't have pipelines, or expectations<br>
+- thus -> No direction given...what's a newbie like myself to do?
 
 ---
 class: light, animated, fadeIn
@@ -116,7 +119,8 @@ class: light, animated, fadeIn
 </center>
      
 ???
-Jumped in head-first of course! Because what else was I going to do? I'm new, I have a lot to prove, not only to other people, but myself. I have to learn things as I go because I'm self-taught. I had to open R immediately of course!
+Jumped in head-first of course! Because what else was I going to do? <br>
+I had to open RStudio as soon as I got data of course!
 
 ---
 class: light, animated, fadeIn
@@ -132,6 +136,8 @@ class: light, animated, fadeIn
 
 </center>
 
+???
+I aruge this point with an real-life example of something that happened to me at work<br>
 ---
 class: light, animated, fadeIn
 <h1><span>First Encounters</span></h1>
@@ -146,6 +152,9 @@ class: light, animated, fadeIn
 <b><i><font color = "#5c0e0b">🚨"4+" is not...🚨</font></i></b><br><br>
 
 </center>
+
+???
+Narcan is a medication that reverses opioid overdoses.
 
 ---
 class: light, animated, fadeIn
@@ -164,11 +173,12 @@ class: light, animated, fadeIn
 
      
 ???
-About first encounters when presented with the task of creating a data pipeline...
-jumping to "real" coding is bad, quick/dirty coding that will help you form question/investigate is good and should not take too much effort unless you're learning as you go. The difficulty should not come because you're trying to do advanced stuff. Do the bare minimum to give you clues/info you need to start asking questions about not only the data but the organization in which it comes from as well. You can also document this early process by making a rough version of metadata. Where you track where data is coming from, what's in the data, who handles the data, etc.
+So I learned alot clearly as seen here, but the main thing is to NOT jump into RStudio as soon as you get a dataset.<br>
+
+If you do jump to coding, do the bare minimum to give you clues/info you need to start asking questions about the data and policies/processes in the organization <br> You can also document this early process by making a rough version of metadata. Where you track where data is coming from, what's in the data, who handles the data, etc.
 
 <br>
-A hard lesson I eventually learned was that taking the time to take a step back and go through an iterative process of asking questions can give a bit more clarity and focus as you begin to start creating a data pipeline. This is so much more important than just rushing to open RStudio because if you jump in with no information, head first, that pipeline can figuratively look and feel like this...
+A hard lesson I learned was that taking the time to take a step back and go through an iterative process of asking questions can give a bit more clarity and focus as you begin to start creating a data pipeline. <br>This is more important than just rushing to open RStudio because if you jump in with no information, head first, that pipeline can figuratively look and feel like this...
 
 ---
 class: dark, center, middle, animated, fadeIn
@@ -184,7 +194,8 @@ class: dark, center, middle, animated, fadeIn
 <img src= "images/pl_2.png", width = "100%", height = "100%">
 
 ???
-Taking the time to investigate will give you some clarity. When you start to get clarity, things can become clearer. Mind you that things are still messy, but a little bit of clarity can give you just enough to continue refining and building processes. Once you accept the fact that you need to iteratively investigate and start gaining some clarity, it's safe to start building out the foundation of the pipeline...
+Taking the time to investigate will give you some clarity.Mind you that things are still messy, but a little bit of clarity can give you just enough to continue refining and building processes.<b>
+Once you accept the fact that you need to repeatedly do this process it's safe to start building out the foundation of the pipeline...
 
 
 ---
@@ -217,7 +228,8 @@ class: light, animated, fadeIn
 <center><img src= "images/internal_external.png", height = 450px></center>
 
 ???
-So when starting out this was kinda what I realized mentally. That in wading through all of this data and trying to create structure I had external things to worry about outside of my computer, and internal things to worry about inside of my computer. To further explain this simplification..
+So when starting out this was kinda what I realized mentally.<br><br>
+I had external things to worry about outside of my computer<br><br>and internal things to worry about inside of my computer. To further explain this simplification let's quickly look at both...
 
 ---
 class: light, animated, fadeIn
@@ -263,20 +275,62 @@ class: light, animated, fadeIn
 ???
 These environments don't exist in silos. Clearly external things can affect internal things and vice versa...<br>
 This is a challenge that every data person knows well. Even if you don't think about the data's environment in this way, those of you that work in non-profit, academia, or government can probably relate to feeling like some thing in your work is affected by bureaucracy or conflicting interests/decision..<br><br>
-What helped me to better navigate the interactions between the two environments was to iteratively tackle each side by introducing structure, documentation, and workflow processes and adjusting for the other side as needed. You can try your best to account for all of this things at the beginning, but it's hard to know what will influence what every time.
+What helped me to better navigate the interactions between the two environments was to repeatedly tackle each environment by introducing structure, documentation, and workflow processes and adjusting for the other environment as needed. You can try your best to account for all of this things at the beginning, but it's hard to know "what" will influence "what" every time.
 
 ---
 class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
 
-<h2><b>Examples of Structuring the External Environment</b></h2>
+<h5><b>Examples of Structuring the External Environment</b></h5>
+<center><b>Making Metadata</b>
+<br>
+<img src="images/metaexample.png", width = "50%", height = "50%"></center>
 
- <ul><li>Data interactions, decisions, and processes that exist <b>externally</b> to your system.</li><br>
-     <li>Administrative policies that affect the flow of data</li><br>
-     <li>Technology that is used for data collection outside of R</li><br>
-     <li>Data literacy of stakeholders and co-workers</li></ul></p><br>
+---
+class: light, animated, fadeIn
 
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the External Environment</b></h5>
+<center><b>Identifying Organization Structure</b>
+<br>
+<img src="images/orgstructure.png", width = "60%"></center>
+
+---
+
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the External Environment</b></h5>
+<center><b>"Assess, Attempt, Repeat"</b>
+<br>
+<img src="images/aar.png", width = "45%", height = "40%"></center>
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+<center><b>Make Clean File Structures</b>
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+<center><b>Modularize Your Code</b>
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+<center><b>Connect and Chain Where It Makes Sense</b>
 
 ---
 class: light, animated, fadeIn
