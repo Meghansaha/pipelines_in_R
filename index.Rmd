@@ -182,13 +182,6 @@ A hard lesson I learned was that taking the time to take a step back and go thro
 ---
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/initial_dream.png", width = "100%", height = "100%">
-
-???
-but...
----
-class: dark, center, middle, animated, fadeIn
-
 
 <img src= "images/pl_2.png", width = "100%", height = "100%">
 
@@ -227,8 +220,7 @@ class: light, animated, fadeIn
 <center><img src= "images/internal_external.png", height = 450px></center>
 
 ???
-So when starting out this was kinda what I realized mentally.<br><br>
-I had external things to worry about outside of my computer<br><br>and internal things to worry about inside of my computer. To further explain this simplification let's quickly look at both...
+So when starting out, I realized I had external things to worry about outside of my computer<br><br>and internal things to worry about inside of my computer. To further explain both of these...
 
 ---
 class: light, animated, fadeIn
@@ -245,7 +237,7 @@ class: light, animated, fadeIn
      <li>Data literacy of stakeholders and co-workers</li></ul></p><br>
      
 ???
-In my xp, it was important to ID the external environment first. This overlapped with the investigation process mentioned earlier. More data sources you have, more involved the process is. Knowing all I could about the external environment, helped guide what the structure would look like internally.
+In my xp, it was easier to ID the external environment first as this overlapped with the investigation process mentioned earlier. More data sources you have, more involved the process is. Knowing all I could about the external environment, helped guide what the structure would look like internally.
 
 ---
 class: light, animated, fadeIn
@@ -313,40 +305,121 @@ class: light, animated, fadeIn
 <h1><span>Environmental Structures</span></h1>
 
 <h5><b>Examples of Structuring the Internal Environment</b></h5>
-<center><b>Make Clean File Structures</b>
-
----
-class: light, animated, fadeIn
-
-<h1><span>Environmental Structures</span></h1>
-
-<h5><b>Examples of Structuring the Internal Environment</b></h5>
-<center><b>Modularize Your Code</b>
-
----
-class: light, animated, fadeIn
-
-<h1><span>Environmental Structures</span></h1>
-
-<h5><b>Examples of Structuring the Internal Environment</b></h5>
-<center><b>Connect and Chain Where It Makes Sense</b>
-
----
-class: dark, center, middle, animated, fadeIn
-
-
-<img src= "images/initial_dream.png", width = "100%", height = "100%">
-
-
-
----
-class: dark, center, middle, animated, fadeIn
-
-
-<img src= "images/pl_2.png", width = "100%", height = "100%">
+<center><b>Make Clean File Structures</b><br>
+<img src="images/filestructure.png", width = "70%"></center>
 
 ???
+It's always helped me to break files up by type (data/script)<br>
+all data has a home, all scripts, and images, etc. has a home.<br>
+Can look different for you based on your org situation.
+---
+class: light, animated, fadeIn
 
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+<center><b>Modularize Your Code</b><br>
+<img src="images/modularizedcode.png", width = "80%"></center>
+
+???
+You can modularize it by component<br>
+Naloxtrac - Tracking dashboard that shows aggregate ODs and public Narcan locations<br>
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+<center><b>Modularize Your Code</b><br>
+<img src="images/modularizedcode2.png", width = "100%"></center>
+
+???
+Can modularize it by function - especially if you're only working with fewer data sources
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+<center><b>Connect and Chain Where It Makes Sense</b></center>
+
+```{r, eval = FALSE}
+#==============================#
+# Library Load-in====
+#==============================#
+library(tidyverse) # For everything data
+library(googlesheets4) # For interacting with Google Drive
+library(janitor) # To keep things clean
+#==============================#
+```
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+
+```{r, eval = FALSE}
+#==============================#
+# Data Process Checks====
+#==============================#
+data_updated <- FALSE
+
+#Data Load in#
+Mainspreadsheet <- "Google Link to Spreadsheet HERE"
+invisible(readline(prompt=c(gs4_auth(), "Press ENTER to confirm selection")))
+
+#Spreadsheet being pulled into the environment#
+new_data <- read_sheet(Mainspreadsheet, sheet = "Version 1" ) %>%
+  select(c(2:4,6,7))
+
+#Pulling in "Master" file to scan for any changes#
+master_data <- readRDS("data/master_data.rds")
+
+#Data "Validation"#
+data_updated <- nrow(new_data) != nrow(master_data) 
+```
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+```{r, eval = FALSE}
+#==============================#
+#Logic Flow for Processing====
+#==============================#
+# If data has changed, a separate processing program is launched.#
+# And a new master file is saved once it completes.#
+if(data_updated){
+  source("scripts/processing_script.R")
+}
+
+# Pipeline returns to the dock and launches a new script to make visuals 
+# Only if the data was updated#
+
+#Visual Creation#
+if(data_updated){
+  source("scripts/viz_script.R")
+}
+```
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Environmental Structures</span></h1>
+
+<h5><b>Examples of Structuring the Internal Environment</b></h5>
+```{r, eval = FALSE}
+#==============================#
+#Rendering of Deliverable====
+#==============================#
+# Pipeline returns to the dock and renders the associated Markdown report
+rmarkdown::render("reports/example_report.Rmd",
+                  output_file = "example_report.html")
+```
 
 ---
 class: dark, center, middle, animated, fadeIn
@@ -355,6 +428,7 @@ class: dark, center, middle, animated, fadeIn
 <img src= "images/pl_3.png", width = "100%", height = "100%">
 
 ???
+Added environmental structure
 
 ---
 class: light, animated, fadeIn
@@ -364,40 +438,98 @@ class: light, animated, fadeIn
 <center><img src= "images/mp_3.png", width = "100%"></center>
 
 ---
-class: dark, center, middle, animated, fadeIn
+class: light, animated, fadeIn
 
+<h1><span>Validations</span></h1>
 
-<img src= "images/initial_dream.png", width = "100%", height = "100%">
+<center><br><br><br>
+<p><i><font size = "48px"><font color = "#612884"><b>"Check</b> yourself</font>, before you wreck yourself"</i><br>😭</font></p>
+</center>
 
 ???
+Guys, I feel like I'm exposing myself here, but the biggest thing I learned about validations were to do them<br>
+I still have a lot to learn myself about performing data validations efficiently.
 
+---
+class: light, animated, fadeIn
+<h1><span>Validations</span></h1>
+
+<h2><b>The Narcan Story</b></h2>
+
+<img src="images/narcan.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist.", height="200px"; style="float: left; margin-top:100px;"><center><br>
+<font color = "#FF1616"><b>Pain<b></font> could have been avoided if I <b>validated</b> that "Narcan" variable.<br><br>
+--
+Assumed all the values were `numeric` types when they were really `character` types<br><br>
+--
+This situation needed a <b>variable "Type" check</b></center>
+
+---
+class: light, animated, fadeIn
+<h1><span>Validations</span></h1>
+
+There's lot of validation types to consider. What you'll need for your circumstances depends on:
+-   Data Types
+
+-   External Validations
+
+-   Method of Collection
+
+-   Other things that you'd probably never think of🙃
+
+---
+class: light, animated, fadeIn
+<h1><span>Validations</span></h1>
+
+<h5><b>Examples of Validations Types I've personally used:</b></h5>
+<br><center>
+<img src= "images/validationtypes.png", width = "85%"></center>
+
+---
+class: light, animated, fadeIn
+<h1><span>Validations</span></h1>
+
+Validations can <b><font color = "#612884">exist in external and internal environments</font></b><br>
+
+<b>Best scenario</b>: Validations are implemented <b><font color = "#612884">externally</font></b><br>
+<center>
+<img src="images/extvalidation.png", width = "85%"></center>
+
+---
+class: light, animated, fadeIn
+<h1><span>Validations</span></h1>
+
+Validations can <b><font color = "#612884">exist in external and internal environments</font></b><br>
+
+<b>Usual scenario</b>: Programmer has to implement it <b><font color = "#612884">internally</font></b>
+
+<center><img src="images/intvalidation.png", width = "85%"></center>
+
+---
+class: light, animated, fadeIn
+<h1><span>Validations</span></h1>
+I did all of my validations manually in R...but there's a package for that!
+<br><br>
+[The `validate` Package]("https://github.com/data-cleaning/validate")<br>
+
+<p style ="font-size:20px">MPJ van der Loo and E de Jonge (2020). Data Validation Infrastructure for R. <i>Journal of Statistical Software</i>, Accepted for publication. <a href="https://arxiv.org/abs/1912.09759">https://arxiv.org/abs/1912.09759</a></p>
+
+<br>
+
+[The Data Validation Cookbook]("https://cran.r-project.org/web/packages/validate/vignettes/cookbook.html#Preface)</p>
+
+<p style ="font-size:20px">MPJ van der Loo (2022) <i>The Data Validation Cookbook version 1.1.1. <a href="https://data-cleaning.github.io/validate">https://data-cleaning.github.io/validate</a></p>
+
+???
+Nothing wrong with doing it manually<br>
+Can be cumbersome (depending on the problem)<br>
 
 ---
 class: dark, center, middle, animated, fadeIn
-
-
-<img src= "images/pl_2.png", width = "100%", height = "100%">
-
-???
-
-
----
-class: dark, center, middle, animated, fadeIn
-
-
-<img src= "images/pl_3.png", width = "100%", height = "100%">
-
-???
-
-
----
-class: dark, center, middle, animated, fadeIn
-
 
 <img src= "images/pl_4.png", width = "100%", height = "100%">
 
 ???
-
+adding validation
 ---
 class: light, animated, fadeIn
 
@@ -405,15 +537,62 @@ class: light, animated, fadeIn
 <br><br>
 <center><img src= "images/mp_4.png", width = "100%"></center>
 
+---
+class: light, animated, fadeIn
+
+<h1><span>Sustainability</span></h1>
+
+<center><br><br><br>
+<p><i><font size = "48px">"Sustainability" can mean and look like <font color = "#488E35"><b>a lot of different things</i></font></p>
+</center>
+
+???
+Def: Capability of something that can be maintained at length without interupption or weakening.
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Sustainability</span></h1>
+
+What sustainability looks like in your organization will depend on:
+<br>
+-   Organization's Environment
+-   Data Deliverables/Use Cases
+-   Status/Health of the Pipeline
+
+???
+I didn't get to do much work for sustainability because of my the organization's environment<br>
+I was the data team/programmer/analyst/data viz designer<br>
+There was no time for comprehensive sustainability work - This is not uncommon.
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Sustainability</span></h1>
+
+<h5><b>Examples of Sustainability Efforts</b></h5><br>
+-   Data Centralization
+-   <font color = "#488E35">Data Workflow Documentation</font> 🌟
+-   <font color = "#488E35">Codebooks</font> 🌟
+-   <font color = "#488E35">Automated Docking Scripts </font>🌟
+-   Adopted Data Standardization/Validations
+-   Scheduled Code Reviews
+-   Pipeline QA and QI
+-   <font color = "#488E35">Operational Documentation</font>🌟
+
+???
+Patience is needed here: Although talking about the sustain. of the pipeline<br>
+So much sustainability work involves the external environment<br>
+Sustainability is hard..alot of times, data teams may not have the bandwidth to take this on<br>
+Centralization - Data is stored into one place (warehouse) but is accessible from multiple projects/scripts<br>
 
 ---
 class: dark, center, middle, animated, fadeIn
 
-
 <img src= "images/initial_dream.png", width = "100%", height = "100%">
 
 ???
-
+head first
 
 ---
 class: dark, center, middle, animated, fadeIn
@@ -422,29 +601,28 @@ class: dark, center, middle, animated, fadeIn
 <img src= "images/pl_2.png", width = "100%", height = "100%">
 
 ???
-
+starting investigations
 
 ---
 class: dark, center, middle, animated, fadeIn
-
 
 <img src= "images/pl_3.png", width = "100%", height = "100%">
 
 ???
-
+adding structures 
 
 ---
 class: dark, center, middle, animated, fadeIn
-
 
 <img src= "images/pl_4.png", width = "100%", height = "100%">
 
 ???
+adding validations
 
 ---
 class: dark, center, middle, animated, fadeIn
 
-
 <img src= "images/pl_5.png", width = "100%", height = "100%">
 
 ???
+creating and maintaining sustainability
