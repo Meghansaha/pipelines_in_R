@@ -177,7 +177,7 @@ So I learned alot clearly as seen here, but the main thing is to NOT jump into R
 If you do jump to coding, do the bare minimum to give you clues/info you need to start asking questions about the data and policies/processes in the organization <br> You can also document this early process by making a rough version of metadata. Where you track where data is coming from, what's in the data, who handles the data, etc.
 
 <br>
-A hard lesson I learned was that taking the time to take a step back and go through an iterative process of asking questions can give a bit more clarity and focus as you begin to start creating a data pipeline. <br>This is more important than just rushing to open RStudio because if you jump in with no information, head first, that pipeline can figuratively look and feel like this...
+A hard lesson I learned was that taking the time to take a step back and go through an iterative process of asking questions can give a bit more clarity and focus as you begin to start creating a data pipeline. <br>This is more important than just rushing to open RStudio because if you jump in with no information, head first, that pipeline can look like that first image I showed, but if we add clarity by taking the time to investigate...
 
 ---
 class: dark, center, middle, animated, fadeIn
@@ -186,7 +186,7 @@ class: dark, center, middle, animated, fadeIn
 <img src= "images/pl_2.png", width = "100%", height = "100%">
 
 ???
-Taking the time to investigate will give you some clarity.Mind you that things are still messy, but a little bit of clarity can give you just enough to continue refining and building processes.<b>
+we'll find that things are still messy, but it can be just enough to help you refine and building processes.<b>
 Once you accept the fact that you need to repeatedly do this process it's safe to start building out the foundation of the pipeline...
 
 
@@ -556,21 +556,21 @@ class: light, animated, fadeIn
 
 What sustainability looks like in your organization will depend on:
 <br>
--   Organization's Environment
--   Data Deliverables/Use Cases
--   Status/Health of the Pipeline
+<center><img src="images/susexs.png", width = "90%"></center>
 
 ???
 I didn't get to do much work for sustainability because of my the organization's environment<br>
 I was the data team/programmer/analyst/data viz designer<br>
 There was no time for comprehensive sustainability work - This is not uncommon.
+<br>
+Although it can look different, in my xp, there's a few main examples I can think of that I would have liked to implement in my last position.
 
 ---
 class: light, animated, fadeIn
 
 <h1><span>Sustainability</span></h1>
 
-<h5><b>Examples of Sustainability Efforts:</b></h5><br>
+<h5><b>Examples of Sustainability Efforts:</b></h5>
 -   Data Centralization
 -   <font color = "#488E35">Data Workflow Documentation</font> 🌟
 -   <font color = "#488E35">Codebooks</font> 🌟
@@ -578,13 +578,36 @@ class: light, animated, fadeIn
 -   Adopted Data Standardization/Validations
 -   Scheduled Code Reviews
 -   Pipeline QA and QI
--   <font color = "#488E35">Operational Documentation</font>🌟
+-   <font color = "#488E35">Operational Documentation🌟</font>
+-   Making Scalable Code
 
 ???
 Patience is needed here: Although talking about the sustain. of the pipeline<br>
 So much sustainability work involves the external environment<br>
 Sustainability is hard..a lot of times, data teams may not have the bandwidth to take this on<br>
 Centralization - Data is stored into one place (warehouse) but is accessible from multiple projects/scripts<br>
+<br>
+Planning for sustainability 
+---
+class: light, animated, fadeIn
+
+<h1><span>Sustainability</span></h1>
+
+<center><img src="images/workflowex.png", height = "450px"></center>
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Sustainability</span></h1>
+
+<center><img src="images/datamapex.png", height = "450px"></center>
+
+---
+class: light, animated, fadeIn
+
+<h1><span>Sustainability</span></h1>
+
+<center><img src="images/transdocex.png"></center>
 
 ---
 class: dark, center, middle, animated, fadeIn
