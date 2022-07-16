@@ -47,7 +47,7 @@ class: dark, center, middle, animated, fadeIn
 
 ???
 The "Perfect" Data Pipeline:
-Nice clear proccess, clean structures, with great results
+Nice clear processes, clean structures, with great results
 <br>
 <br>
 This is a pipeline to most of us, but in this last position I was in, the pipeline looked nothing like that at all. If we could say there was any pipeline, it was very manual, very clunky, no structure, no automation, just vibes and recklessness. So although I learned a lot and have alot to share, I don't have a lot of time to talk today, so I pulled out four main points that I learned about creating pipelines during this journey.
