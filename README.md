@@ -13,10 +13,9 @@ This repository is intended to be used as a general learning tool, resource, and
 
 <img src="images/pl_flow.png" style="max-width: 100%"/>
 
-<br><br>
+<br>
 
 ## Slides
-
 
 The slides for *"Making Data Pipelines in R"* can be found on the repository [here](https://meghansaha.github.io/pipelines_in_R).
 
@@ -24,19 +23,16 @@ The slides for *"Making Data Pipelines in R"* can be found on the repository [he
 
 ## Example R Scripts (Internal Environment)
 
-
 Example R Projects and scripts can be found on the repository [here]().
 
 <br><br>
 
 ## Example (Non-Technical) Documents (First Investigations and External Environment)
 
-
 Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here]().
 
 <br><br>
 
 ## Other Relevant R Resources (Validation and Sustainability)
-
 
 A breakdown of R documentation, packages, and other references that can be useful for making data pipelines in R that can be found [here]().
