@@ -15,9 +15,13 @@ This repository can serve as a general learning tool, resource, and source of in
 
 <br>
 
-## Slides
+## Slides and Talk Recording
 
 The slides for *"Making Data Pipelines in R"* can be found on the repository [here](https://meghansaha.github.io/pipelines_in_R).
+
+<br>
+
+This talk being presented on July 27^th^ 2022, 1:30  PM EST at the Gaylord National Convention Center in National Harbor,(Maryland/D.C) United States. A recording to this talk will be provided here when it is available.
 
 <br><br>
 
