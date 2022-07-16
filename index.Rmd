@@ -20,6 +20,9 @@ output:
 ```{r setup, include=FALSE}
 options(htmltools.dir.version = FALSE)
 xaringanExtra::use_freezeframe(responsive = FALSE)
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+)
 ```
 
 class: dark, center, middle, animated, fadeIn
