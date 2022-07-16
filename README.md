@@ -5,11 +5,11 @@
 
 ## About
 
-This repository contains supplemental resources and materials that coincide with the [*"Making Data Pipelines in R"* talk](https://sched.co/11iZI) presented at [RStudio::conf(2022)](https://www.rstudio.com/conference/2022/schedule/).
+This repository contains supplemental resources and materials that coincide with the [*"Making Data Pipelines in R"* talk](https://sched.co/11iZI) at [RStudio::conf(2022)](https://www.rstudio.com/conference/2022/schedule/).
 
-*"Making Data Pipelines in R* is a story that aims to present high-level concepts that were found to be useful for creating a data pipeline in R from scratch within the context of the user being self-taught in the R programming language. This context is important because any programmer (especially those that are self-taught) can have knowledge gaps that may make the process of creating automated data pipelines daunting, if not impossible.
+*"Making Data Pipelines in R* is a story that aims to present high-level concepts that can be useful for creating a data pipeline in R from scratch within the context of the user being self-taught in the R programming language. This context is relevant because any programmer (Especially self-taught programmers) can have knowledge gaps that may make creating automated data pipelines daunting, if not impossible.
 
-This repository is intended to be used as a general learning tool, resource, and source of inspiration for those that are wanting to learn what should be kept in mind when creating data pipelines from scratch in R. Data pipelines is a huge topic that is fluid and varies by industry, organizational setting, and professional use case. Your mileage may vary. Feel free to use anything in this repository that may help you in your own pipeline adventures!
+This repository can serve as a general learning tool, resource, and source of inspiration for those who want to begin creating data pipelines from scratch in R. Data pipelines is an expansive topic that is fluid and varies by industry, organizational setting, and professional use case. Your mileage may vary. Feel free to use anything in this repository that may help you in your own pipeline adventures!
 
 <img src="images/pl_flow.png" style="max-width: 100%"/>
 
