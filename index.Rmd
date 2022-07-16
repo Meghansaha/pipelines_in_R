@@ -118,8 +118,8 @@ class: light, animated, fadeIn
 </center>
      
 ???
-Jumped in head-first of course! Because what else was I going to do? <br>
-I had to open RStudio as soon as I got data of course!
+Anyone seen Shaun of the Dead?<br>
+Just like Shaun here...I Jumped into RStudio head-first 
 
 ---
 class: light, animated, fadeIn
@@ -136,7 +136,8 @@ class: light, animated, fadeIn
 </center>
 
 ???
-I aruge this point with an real-life example of something that happened to me at work<br>
+I argue this point with an real-life example of something that happened to me at work<br>
+
 ---
 class: light, animated, fadeIn
 <h1><span>First Encounters</span></h1>
@@ -145,15 +146,25 @@ class: light, animated, fadeIn
 
 
 <center><img src= "images/narcan.png" height = "200px"><br><br>
+
 --
-<b><i><font color = "#A21152">0,1,2,3 are numbers...right?</font></i></b><br>
---
-<b><i><font color = "#5c0e0b">🚨"4+" is not...🚨</font></i></b><br><br>
+<b><i><font color = "#A21152">0,1,2,3 are numbers...right?</font><font color = "#5c0e0b"> <br>🚨"4+" is not...🚨</font></i></b><br><br>
 
 </center>
 
 ???
 Narcan is a medication that reverses opioid overdoses.
+<br>
+Got a data set with a variable called "Narcan" in it <br>
+Opened RStudio IDE, visually looked at the variable <br>
+Saw Numbers, so just like the Shaun a couple of slides ago <br>
+... I jumped in head first <br>
+...and proceeded to create reports and dashboards..
+two months later, I had a random Eureka moment and decided to check the Narcan Variable...<br>
+I found a value of "4+"...which is not a number<br>
+Imagine the embarrassment of going back and telling everyone that everything I did was wrong
+
+
 
 ---
 class: light, animated, fadeIn
@@ -279,17 +290,6 @@ class: light, animated, fadeIn
 <img src="images/metaexample.png", width = "50%", height = "50%"></center>
 
 ---
-class: light, animated, fadeIn
-
-<h1><span>Environmental Structures</span></h1>
-
-<h5><b>Examples of Structuring the External Environment</b></h5>
-<center><b>Identifying Organization Structure</b>
-<br>
-<img src="images/orgstructure.png", width = "60%"></center>
-
----
-
 class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
@@ -457,10 +457,10 @@ class: light, animated, fadeIn
 <h2><b>The Narcan Story</b></h2>
 
 <img src="images/narcan.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist.", height="200px"; style="float: left; margin-top:100px;"><center><br>
-<font color = "#FF1616"><b>Pain<b></font> could have been avoided if I <b>validated</b> that "Narcan" variable.<br><br>
---
+<font color = "#FF1616"><b>Pain<b></font> could have been avoided if I <b>validated</b> that "Narcan" variable.<br>
+
 Assumed all the values were `numeric` types when they were really `character` types<br><br>
---
+
 This situation needed a <b>variable "Type" check</b></center>
 
 ---
