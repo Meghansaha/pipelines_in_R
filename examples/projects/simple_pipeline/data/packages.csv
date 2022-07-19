@@ -1,17 +1,12 @@
 package_name,cran,github,gh_user,justification
-crosstalk,TRUE,FALSE,,RMD interactivity
 dplyr,TRUE,FALSE,,Data wrangling
-DT,TRUE,FALSE,,Create interactive tables for dashboard
 here,TRUE,FALSE,,Easier directory movement
-flexdashboard,TRUE,FALSE,,Creating interactive dashboards with R Markdown
 forcats,TRUE,FALSE,,Factor creation/manipulation
 ggplot2,TRUE,FALSE,,Data visualization
 gt,TRUE,FALSE,,Creating tables
 knitr,TRUE,FALSE,,Markdown/Report handling
-leafem,TRUE,FALSE,,Leaflet extensions
-leaflet,TRUE,FALSE,,Creating interactive maps
 readr,TRUE,FALSE,,Read and write data files (csv)
+rmarkdown,TRUE,FALSE,,Handle R Markdown Rendering
 stringr,TRUE,FALSE,,String Manipulation
-summarywidget,FALSE,TRUE,kent37,Interactive widgets for dashboard
 tibble,TRUE,,,Dplyr/tidyverse friendly dataframes
 tidygeocoder,TRUE,FALSE,,Geocoding data

@@ -31,8 +31,13 @@ new_geo <- new_locations %>%
 source(here("functions/file_updater.R"))
 
 #Pulling in the "master" geo dataset (data that was already geocoded in a past session)
-master_geo <- readRDS(here("data/master_geo.RDS"))
+master_geo <- readRDS(here("data/master_EXAMPLE_geo.RDS"))
 
 #Using the function for the "new_geo" dataframe
 file_updater(new_geo,master_geo)
   
+# Friendly message to console
+message("Updated data is now in `data/master_geo.RDS`")
+
+#Removing secondary (not needed) objects from the environment#
+rm(master_geo,new_geo, file_updater)

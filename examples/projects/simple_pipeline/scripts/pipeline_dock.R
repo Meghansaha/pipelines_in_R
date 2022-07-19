@@ -41,7 +41,7 @@ source("./scripts/package_handler.R")
 data_updated <- FALSE
 
 #Loading in a "master" data file - A file of pre-existing data.
-master_locations <- readRDS(here("data/master_locations.RDS"))
+master_locations <- readRDS(here("data/master_EXAMPLE_locations.RDS"))
 
 #Loading in some "current" data to process
 current_locations <- read_csv(here("data/locations.csv"), show_col_types = FALSE) %>%
@@ -65,6 +65,7 @@ if(nrow(new_locations) > 0){
 #will complete.
 
 if(data_updated){
+  
 #======================#
 #Geoprocessing====
 #======================#
@@ -80,13 +81,30 @@ source(here("scripts/geo_script.R"))
 #the visualization script
   
 #======================#
-#Visualization====
+#Visualizations====
 #======================#
   
-  #source(here("scripts/viz_script.R"))
+source(here("scripts/viz_script.R"))
+  
+#======================#
+#Deliverable Rendering====
+#======================#
+
+#This launches the RMD script that makes the HTML report#
+rmarkdown::render(here::here("scripts/deliverable_script.rmd"), #The RMD Script we want to run
+                  output_dir = here::here("reports"), #The folder/file path we want the finished report to go to
+                  output_file = here::here("reports/travel_log.html"), #Setting the actual file name of the report
+                  intermediates_dir = here::here()) #Making sure the the intermediate files like images, stay put in our main directory
+
+# This opens up the HTML report to confirm it has worked/compiled#
+browseURL(here::here("reports/travel_log.html"))
 
 } else{
   message("No new data was detected.\nDeliverables should already be up to date.")
 }
 
+# This opens up the HTML report to confirm it has worked/compiled#
+browseURL(here::here("reports/travel_log.html"))
 
+#Assuming the program got to this point without error, this removes all other objects that was created from the environment.
+rm(current_locations, geo_table_data, master_geo, master_locations, new_locations, package_names)
