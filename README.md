@@ -2,7 +2,6 @@
 
 # Resources for Making Data Pipelines in R
 
-
 ## About
 
 This repository contains supplemental resources and materials that coincide with the [*"Making Data Pipelines in R"* talk](https://sched.co/11iZI) at [RStudio::conf(2022)](https://www.rstudio.com/conference/2022/schedule/).
@@ -21,19 +20,19 @@ The slides for *"Making Data Pipelines in R"* can be found on the repository [he
 
 <br>
 
-This talk being presented on July 27^th^ 2022, 1:30  PM EST at the Gaylord National Convention Center in National Harbor,(Maryland/D.C) United States. A recording to this talk will be provided here when it is available.
+This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylord National Convention Center in National Harbor,(Maryland/D.C) United States. A recording to this talk will be provided here when it is available.
 
 <br><br>
 
 ## Example R Scripts (Internal Environment)
 
-Example R Projects and scripts can be found on the repository [here]().
+Example R Projects and scripts can be found on the repository [here](examples/projects).
 
 <br><br>
 
 ## Example (Non-Technical) Documents (First Investigations and External Environment)
 
-Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here]().
+Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here](examples/documents).
 
 <br><br>
 
