@@ -1,6 +1,6 @@
 <img src="images/readme_logo.png" alt="Making Data Pipelines in R: A Story From A Self Taught Perspective Resources and Materials on a black and gray blotchy background" style="max-" width="100%"/>
 
-# Resources for Making Data Pipelines in R
+# **Resources for Making Data Pipelines in R** <br>
 
 ## **About**
 
@@ -44,4 +44,4 @@ Example (Non-Technical) Documents like metadata tables and data workflow diagram
 
 ## **Other Relevant R Resources (Validation and Sustainability)**
 
-A breakdown of R documentation, packages, and other references that can be useful for making data pipelines in R that can be found [here]().
+A breakdown of R documentation, packages, and other references that can be useful for making data pipelines in R that can be found [here](other_resources.html).
