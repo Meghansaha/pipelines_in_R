@@ -651,3 +651,4 @@ class: dark, center, middle, animated, fadeIn
 
 ???
 creating and maintaining sustainability
+The main point that, even after putting so much work into it, I still think it looks mysterious
