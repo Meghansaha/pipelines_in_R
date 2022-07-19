@@ -44,4 +44,4 @@ Example (Non-Technical) Documents like metadata tables and data workflow diagram
 
 ## **Other Relevant R Resources (Validation and Sustainability)**
 
-A breakdown of R documentation, packages, and other references that can be useful for making data pipelines in R that can be found [here](other_resources.html).
+A breakdown of R documentation, packages, and other references that can be useful for making data pipelines in R that can be found [here](other_resources.md).
