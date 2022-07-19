@@ -26,7 +26,11 @@ This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylo
 
 ## Example R Scripts (Internal Environment)
 
-Example R Projects and scripts can be found on the repository [here](examples/projects).
+Example R Projects and scripts can be found on the repository [here](examples/projects).<br><br>
+
+For those looking for **more complicated** scripts that exercises knowledge of intermediate script modularization, custom functions, and script chaining, you may be interested in the example R Project "simple_pipeline" located [here](examples/projects/simple_pipeline)<br><br>
+
+For those that want an **lighter introduction** to chaining scripts together without worrying about intermediate knowledge of working directories, you may be interested in the example R project "even_simpler_pipeline" located [here](examples/projects/even_simpler_pipeline)
 
 <br><br>
 
