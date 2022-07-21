@@ -23,6 +23,7 @@ The slides for *"Making Data Pipelines in R"* can be found on the repository [he
 This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylord National Convention Center in National Harbor,(Maryland/D.C) United States. A recording to this talk will be provided here when it is available.
 
 <br><br>
+
 <center><img src="images/fe_es_banner.png" style="max-width: 50%"/></center>
 
 ## **Example (Non-Technical) Documents (First Investigations and External Environment)**
@@ -30,6 +31,7 @@ This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylo
 Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here](examples/documents).
 
 <br><br>
+
 <center><img src="images/es_banner.png" style="max-width: 25%"/></center>
 
 ## **Example R Scripts (Internal Environment)**
