@@ -1,4 +1,4 @@
-<img src="images/readme_logo.png" alt="Making Data Pipelines in R: A Story From A Self Taught Perspective Resources and Materials on a black and gray blotchy background" style="max-" width="100%"/>
+<img src="images/readme_logo.png" alt="Making Data Pipelines in R: A Story From A Self Taught Perspective Resources and Materials on a black and gray blotchy background" style="max-width='100%;'"/>
 
 # **Resources for Making Data Pipelines in R** <br>
 
@@ -23,6 +23,14 @@ The slides for *"Making Data Pipelines in R"* can be found on the repository [he
 This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylord National Convention Center in National Harbor,(Maryland/D.C) United States. A recording to this talk will be provided here when it is available.
 
 <br><br>
+<center><img src="images/fe_es_banner.png" style="max-width: 50%"/></center>
+
+## **Example (Non-Technical) Documents (First Investigations and External Environment)**
+
+Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here](examples/documents).
+
+<br><br>
+<center><img src="images/es_banner.png" style="max-width: 25%"/></center>
 
 ## **Example R Scripts (Internal Environment)**
 
@@ -36,11 +44,7 @@ For those that want an **lighter introduction** to chaining scripts together wit
 
 <br><br>
 
-## **Example (Non-Technical) Documents (First Investigations and External Environment)**
-
-Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here](examples/documents).
-
-<br><br>
+<center><img src="images/val_sus_banner.png" style="max-width: 50%"/></center>
 
 ## **Other Relevant R Resources (Validation and Sustainability)**
 

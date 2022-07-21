@@ -26,7 +26,7 @@ xaringanExtra::use_extra_styles(
 
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/initial_dream.png", width = "100%", height = "100%">
+<img src= "images/initial_dream.png", alt="A abstract piece of generative art that looks like a tangled ball of black string with various lighter colors mixed in. Some may even say it looks like a messy black hole." width = "100%" height = "100%">
 
 ???
 So I have a story to tell you all about making data pipelines in R, but before I get into that, I have a question to ask all of you. You don't have to answer me out loud, but...
@@ -43,7 +43,7 @@ Those of us that work in data, when we think of data pipelines, it might look so
 ---
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/perfectpipe.png", width = "100%", height = "100%">
+<img src= "images/perfectpipe.png" alt="A visual example of a 'perfect' pipeline. A process that starts with perfect, contained data collection, perfect cleaning processing, perfect cloud data storage, an easy way to pull data into software and ultimately share it with others easily." width = "100%" height = "100%">
 
 ???
 The "Perfect" Data Pipeline:
@@ -56,7 +56,7 @@ class: light, animated, fadeIn
 
 <h1><span>Main Points</span></h1>
 <br><br>
-<center><img src= "images/mainpoints.png", width = "100%"></center>
+<center><img src= "images/mainpoints.png" alt="A roadmap visual of the presentation flow. It display four sections of the presentation. The first encounters with the data, the environmental structures of the pipeline, the integration of data validation into the pipeline, and creating and identifying sustainability efforts for the data pipeline." width = "100%"></center>
 
 ???
 -My first encounters with the data in this pipeline<br>
@@ -70,7 +70,7 @@ class: light, animated, fadeIn
 
 <h1><span>Main Points</span></h1>
 <br><br>
-<center><img src= "images/mp_1.png", width = "100%"></center>
+<center><img src= "images/mp_1.png" alt = "The presentation's roadmap with the first main point, first encounters, highlighted. width = "100%"></center>
 
 ???
 So I think the best thing for me to do is go back to the beginning, during those first encounters I had with this pipeline's data within this position.
