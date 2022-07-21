@@ -24,7 +24,7 @@ This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylo
 
 <br><br>
 
-<div align="center"><img src="images/fe_es_banner.png" style="max-width: 50%"/></div>
+<div align="center"><img src="images/fe_es_banner.png" style="max-width: 30%"/></div>
 
 ## **Example (Non-Technical) Documents (First Investigations and External Environment)**
 
@@ -32,7 +32,7 @@ Example (Non-Technical) Documents like metadata tables and data workflow diagram
 
 <br><br>
 
-<div align="center"><img src="images/es_banner.png" style="max-width: 25%"/></div>
+<div align="center"><img src="images/es_banner.png" style="max-width: 10%"/></div>
 
 ## **Example R Scripts (Internal Environment)**
 
@@ -46,7 +46,7 @@ For those that want an **lighter introduction** to chaining scripts together wit
 
 <br><br>
 
-<div align="center"><img src="images/val_sus_banner.png" style="max-width: 50%"/></div>
+<div align="center"><img src="images/val_sus_banner.png" style="max-width: 30%"/></div>
 
 ## **Other Relevant R Resources (Validation and Sustainability)**
 
