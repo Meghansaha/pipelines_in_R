@@ -24,17 +24,17 @@ This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylo
 
 <br><br>
 
-<div align="center"><img src="images/fe_es_banner.png" style="max-width: 30%"/></div>
-
 ## **Example (Non-Technical) Documents (First Investigations and External Environment)**
+
+<div align="center"><img src="images/fe_es_banner.png" style="max-width: 30%"/></div>
 
 Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here](examples/documents).
 
 <br><br>
 
-<div align="center"><img src="images/es_banner.png" style="max-width: 10%"/></div>
-
 ## **Example R Scripts (Internal Environment)**
+
+<div align="center"><img src="images/es_banner.png" style="max-width: 10%"/></div>
 
 Example R Projects and scripts can be found on the repository [here](examples/projects).<br><br>
 
@@ -46,8 +46,8 @@ For those that want an **lighter introduction** to chaining scripts together wit
 
 <br><br>
 
-<div align="center"><img src="images/val_sus_banner.png" style="max-width: 30%"/></div>
-
 ## **Other Relevant R Resources (Validation and Sustainability)**
+
+<div align="center"><img src="images/val_sus_banner.png" style="max-width: 30%"/></div>
 
 A breakdown of R documentation, packages, and other references that can be useful for making data pipelines in R that can be found [here](other_resources.md).
