@@ -93,7 +93,7 @@ Let me give you some context..
 class: light, animated, fadeIn
 <h1><span>First Encounters</span></h1>
 
-<img src="images/me.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
+<img src="images/Me.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
 <p style="float: right;"><h2><b>Some Facts:</b></h2>
  <ul><li>Unfamiliar subject matter - opioid data</li><br>
@@ -292,7 +292,7 @@ class: light, animated, fadeIn
 <h5><b>Examples of Structuring the External Environment</b></h5>
 <center><b>Making Metadata</b>
 <br>
-<img src="images/metaexample.png" alt="A screenshot of a metadata table that comes from a dataset's codebook. Metadata can consist of data about the data with information such as file types, variable types, administrators, methods of collection, etc." width = "50%", height = "50%"></center>
+<img src="images/metaexample.png" alt="A screenshot of a metadata table that comes from a datasets codebook. Metadata can consist of data about the data with information such as file types, variable types, administrators, methods of collection, etc." width = "50%" height = "50%"></center>
 
 ???
 This is a snippet of a codebook's metadata section I've created in the past. The specifics here aren't important and there's example documents like this in the repo you can use for yourself. But the main thing that helped me was having literal data about the data...
