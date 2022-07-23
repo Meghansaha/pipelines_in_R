@@ -231,7 +231,7 @@ class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
 
-<center><img src= "images/internal_external.png", alt="An image that shows visuals of components of an pipelines potential internal and external structures. With the external on the left side and internal on the right. " height = 450px></center>
+<center><img src= "images/int_ext.png", alt="an image that shows visuals of components of an pipelines potential internal and external structures. With the external on the left side and internal on the right." height = 450px></center>
 
 ???
 So when starting out, I realized I had external things to worry about outside of my computer<br><br>and internal things to worry about inside of my computer. To further explain both of these...
