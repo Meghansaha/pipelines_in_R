@@ -50,7 +50,7 @@ The "Perfect" Data Pipeline:
 Nice clear processes, clean structures, with great results
 <br>
 <br>
-This is a pipeline to most of us, but in this last position I was in, the pipeline looked nothing like that at all. If we could say there was any pipeline, it was very manual, very clunky, no structure, no automation, just vibes and recklessness. So although I learned a lot and have alot to share, I don't have a lot of time to talk today, so I pulled out four main points that I learned about creating pipelines during this journey.
+This is a pipeline to most of us, but in this last position I was in, the pipeline looked nothing like that at all. If we could say there was any pipeline, it was very manual, very clunky, no structure, no automation, just vibes and recklessness. So although I learned a lot and have alot to share, I don't have a lot of time to talk today, so I pulled out four main points that I learned about creating pipelines during this journey. 
 ---
 class: light, animated, fadeIn
 
@@ -63,19 +63,19 @@ class: light, animated, fadeIn
 -The importance of identifying the environmental structures of the data pipeline<br>
 -Embedding validations within the data pipeline<br>
 -Understanding what sustainability looks like for the data pipeline
-
+-Keep in mind that all of these main points could easily be their own talks so I'll only touch on the biggest takeaways. However, I've created a list of example pipeline scripts and resources that show some of these concepts in actions that you'll be able to access and use after this talk.
 
 ---
 class: light, animated, fadeIn
 
 <h1><span>Main Points</span></h1>
 <br><br>
-<center><img src= "images/mp_1.png" alt = "The presentation's roadmap with the first main point, first encounters, highlighted. width = "100%"></center>
+<center><img src= "images/mp_1.png" alt = "The presentation's roadmap with the first main point, first encounters, highlighted." width = "100%"></center>
 
 ???
-So I think the best thing for me to do is go back to the beginning, during those first encounters I had with this pipeline's data within this position.
+So, with that out of the way, I think the best thing for me to do is go back to the beginning, during those first encounters I had with this pipeline's data within this position.
 <br><br>
-Now I know, I'm going to sound like I'm out of my mind again, but guys, the very first thing I learned during my first encounters in this journey was that...
+Now I know, I'm going to sound like I'm out of my mind again, but, the very first thing I learned during my first encounters in this journey was that...
 
 ---
 class: light, animated, fadeIn
@@ -116,12 +116,12 @@ class: light, animated, fadeIn
 <h2><b>So What Did I Do?</b></h2>
 
 <center>
-<img class = "gif"; src="images/headfirst.gif" width = "400px", height = "300px">
+<img class = "gif"; src="images/headfirst.gif" alt="A looping animated gif of Shaun from the Shaun of the Dead movie jumping over a fence to get to the Winchester." width = "400px", height = "300px">
 </center>
      
 ???
 Anyone seen Shaun of the Dead?<br>
-Just like Shaun here...I Jumped into RStudio head-first 
+Just like Shaun dove head first here on is way to the Winchester...I Jumped into RStudio head-first 
 
 ---
 class: light, animated, fadeIn
@@ -147,7 +147,7 @@ class: light, animated, fadeIn
 <h2><b>The Narcan Story</b></h2>
 
 
-<center><img src= "images/narcan.png" height = "200px"><br><br>
+<center><img src= "images/narcan.png" alt="A picture of a nasal spray medication called Narcan. Narcan is used to reverse opioid overdoses." height = "200px"><br><br>
 
 --
 <b><i><font color = "#A21152">0,1,2,3 are numbers...right?</font><font color = "#5c0e0b"> <br>🚨"4+" is not...🚨</font></i></b><br><br>
@@ -161,10 +161,10 @@ Got a data set with a variable called "Narcan" in it <br>
 Opened RStudio IDE, visually looked at the variable <br>
 Saw Numbers, so just like the Shaun a couple of slides ago <br>
 ... I jumped in head first <br>
-...and proceeded to create reports and dashboards..
-two months later, I had a random Eureka moment and decided to check the Narcan Variable...<br>
-I found a value of "4+"...which is not a number<br>
-Imagine the embarrassment of going back and telling everyone that everything I did was wrong
+...and proceeded to create reports and dashboards that included calculations of this Narcan variable...<br>
+Two months later, I had a random "Eureka" moment and decided to check the Narcan Variable...<br>
+I found a value of "4+" *SLIDE UP* ...which is not a number<br>
+Imagine the embarrassment of going back and telling everyone that everything I did for two months was wrong
 
 
 
@@ -196,10 +196,10 @@ A hard lesson I learned was that taking the time to take a step back and go thro
 class: dark, center, middle, animated, fadeIn
 
 
-<img src= "images/pl_2.png", width = "100%", height = "100%">
+<img src= "images/pl_2.png", alt="The second version of the abstract art that represents a data pipeline when data investigations are performed. The image still looks like a tangled mess, but with the hole in the center of it widening a bit." width = "100%", height = "100%">
 
 ???
-we'll find that things are still messy, but it can be just enough to help you refine and building processes.<b>
+we'll find that things are still messy, this IS a different picture than the first if you couldn't tell. It might not seem like much changed here but that small change can be just enough to help you refine and building processes.<b>
 Once you accept the fact that you need to repeatedly do this process it's safe to start building out the foundation of the pipeline...
 
 
@@ -208,10 +208,11 @@ class: light, animated, fadeIn
 
 <h1><span>Main Points</span></h1>
 <br><br>
-<center><img src= "images/mp_2.png", width = "100%"></center>
+<center><img src= "images/mp_2.png", alt="The presentation's roadmap now with the second main point, Environmental Structures, highlighted." width = "100%"></center>
 
 ???
-by introducing actual environmental structure to the process now.
+by introducing actual environmental structure to the process ..<br>
+The biggest thing I learned about environmental structures is that...
 
 ---
 class: light, animated, fadeIn
@@ -230,7 +231,7 @@ class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
 
-<center><img src= "images/internal_external.png", height = 450px></center>
+<center><img src= "images/internal_external.png", alt="An image that shows visuals of components of an pipeline's potential internal (inside of a computer) and external (outside of a computer) structures. With the external on the left side, and internal on the right. " height = 450px></center>
 
 ???
 So when starting out, I realized I had external things to worry about outside of my computer<br><br>and internal things to worry about inside of my computer. To further explain both of these...
@@ -240,7 +241,7 @@ class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
 
-<img src="images/external.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
+<img src="images/external.png" alt="A simple diagram that shows a double arrow between two individuals and a double arrow between two buildings" width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
 <p style="float: right;"><h2><b>External Environment</b></h2>
 
@@ -257,7 +258,7 @@ class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
 
-<img src="images/internal.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist." width="25%"; height="25%"; style="float: left; margin-top:100px;">
+<img src="images/internal.png" alt="A picture that shows a simple diagram of data flowing in between folders and into data visualizations." width="25%"; height="25%"; style="float: left; margin-top:100px;">
 
 <p style="float: right;"><h2><b>Internal Environment</b></h2>
 
@@ -266,7 +267,9 @@ class: light, animated, fadeIn
      <li>Method of data security and storage processes</li></ul></p>
      
 ???
-ID internal environment is also essential. understanding the best way to set up your logic in things, nuances of any packages that you are, understanding what packages are essential for minimum functionality, Understanding the output needed for deliverables.<br><br>
+The internal environment is what most people think about when they think of data pipeline. The internal environment is essential. Because it deals with...<br><br>
+-Understanding the best way to set up your logic in things<br> nuances of any packages that you are, -Understanding what R packages are essential for minimum functionality<br>
+-Understanding the output needed for deliverables.<br><br>
 Now, it should go without saying that this is not the reality...
 
 ---
@@ -274,12 +277,12 @@ class: light, animated, fadeIn
 
 <h1><span>Environmental Structures</span></h1>
 
-<center><img src= "images/interactions.png", height = 450px></center>
+<center><img src= "images/interactions.png" alt="The original picture of the external investigation visuals on the left, and the internal investigation visuals on the right now with the addition of multiple arrows crossing over into each environment on the left and right sides to visually make the point that environments in a data pipeline are seldom siloed or exist on their own." height = 450px></center>
 
 ???
 These environments don't exist in silos. Clearly external things can affect internal things and vice versa...<br>
 This is a challenge that every data person knows well. Even if you don't think about the data's environment in this way, those of you that work in non-profit, academia, or government can probably relate to feeling like some thing in your work is affected by bureaucracy or conflicting interests/decision..<br><br>
-What helped me to better navigate the interactions between the two environments was to repeatedly tackle each environment by introducing structure, documentation, and workflow processes and adjusting for the other environment as needed. You can try your best to account for all of this things at the beginning, but it's hard to know "what" will influence "what" every time.
+What helped me to better navigate the interactions between the two environments was to repeatedly tackle each environment by introducing structure, documentation, and workflow processes into one environment and adjusting for the other environment as needed. You can try your best to account for all of this things at the beginning, but it's hard to know "what" will influence "what" every time.
 
 ---
 class: light, animated, fadeIn
@@ -289,8 +292,10 @@ class: light, animated, fadeIn
 <h5><b>Examples of Structuring the External Environment</b></h5>
 <center><b>Making Metadata</b>
 <br>
-<img src="images/metaexample.png", width = "50%", height = "50%"></center>
+<img src="images/metaexample.png" alt="A screenshot of a metadata table that comes from a dataset's codebook. Metadata can consist of data about the data with information such as file types, variable types, administrators, methods of collection, etc." width = "50%", height = "50%"></center>
 
+???
+This is a snippet of a codebook's metadata section I've created in the past. The specifics here aren't important and there's example documents like this in the repo you can use for yourself. But the main thing that helped me was having literal data about the data...
 ---
 class: light, animated, fadeIn
 
@@ -299,8 +304,12 @@ class: light, animated, fadeIn
 <h5><b>Examples of Structuring the External Environment</b></h5>
 <center><b>"Assess, Attempt, Repeat"</b>
 <br>
-<img src="images/aar.png", width = "45%", height = "40%"></center>
+<img src="images/aar.png" alt="A visual with a series of gears on the left and two people talking on the right. This visualizes the concept of assessing what is or isn't working in a data pipeline externally, attempting to bring improvements, and repeating the process until a satisfactory resolution is achieved." width = "45%", height = "40%"></center>
 
+???
+If you're coming into workplaces that already have established way of doing things, and they are inefficient, as a new person, you have the benefit of seeing things with a fresh eye. You can always attempt to make the changes to make things better, sometimes it can be successful, sometimes it may not. If it's not successful, you can always try again by repeating to solve any problems in a different way. Whether that's changing something externally, or compromising and changing something internally.<br><br>
+
+And Speaking of Internally, I learned a few things that helped me along the way as well.
 ---
 class: light, animated, fadeIn
 
@@ -308,9 +317,10 @@ class: light, animated, fadeIn
 
 <h5><b>Examples of Structuring the Internal Environment</b></h5>
 <center><b>Make Clean File Structures</b><br>
-<img src="images/filestructure.png", width = "70%"></center>
+<img src="images/filestructure.png" alt="A screenshot of an RStudio IDE's Files pane that shows a clean file directory. Clean file directories will have established folders for certain file types, data, objects, and components needed for a data pipeline in R" width = "70%"></center>
 
 ???
+-Always create an R Project file/set up for each deliverable<br><br>
 It's always helped me to break files up by type (data/script)<br>
 all data has a home, all scripts, and images, etc. has a home.<br>
 Can look different for you based on your org situation.
@@ -320,8 +330,8 @@ class: light, animated, fadeIn
 <h1><span>Environmental Structures</span></h1>
 
 <h5><b>Examples of Structuring the Internal Environment</b></h5>
-<center><b>Modularize Your Code</b><br>
-<img src="images/modularizedcode.png", width = "80%"></center>
+<center><b>Modularize Your Code (By Data/Component)</b><br>
+<img src="images/modularizedcode.png" alt="A screenshot of an RStudio IDE's Files pane that shows a clean file directory with example of R script files that were modularized by data set. This can work well in pipelines with many data sources." width = "80%"></center>
 
 ???
 You can modularize it by component<br>
@@ -332,8 +342,8 @@ class: light, animated, fadeIn
 <h1><span>Environmental Structures</span></h1>
 
 <h5><b>Examples of Structuring the Internal Environment</b></h5>
-<center><b>Modularize Your Code</b><br>
-<img src="images/modularizedcode2.png", width = "100%"></center>
+<center><b>Modularize Your Code (By Function/Process)</b><br>
+<img src="images/modularizedcode2.png", alt="A screenshot of an RStudio IDE's Files pane that shows a clean file directory with example of R script files that were modularized by function. This can work well in pipelines with only one or few data sources." width = "100%"></center>
 
 ???
 Can modularize it by function - especially if you're only working with fewer data sources
@@ -355,6 +365,11 @@ library(janitor) # To keep things clean
 #==============================#
 ```
 
+
+???
+The last thing I learned about the internal envrionment of pipelines in R is the benefit of something that I've called "connecting and chaning"<br><br>
+The context of the next few code snippets aren't important, but the structure of the scripts and how it's organized and used is.<br>
+The following snippets are apart of an example "docking script" - one R script that controls the execution of an entire pipeline in one script by using logic to launch and execute other scripts. - We start with a simple library load-in...
 ---
 class: light, animated, fadeIn
 
@@ -383,6 +398,8 @@ master_data <- readRDS("data/master_data.rds")
 data_updated <- nrow(new_data) != nrow(master_data) 
 ```
 
+???
+Then we move into loading in data and doing work to check, or validate, that data that comes in. The data can come from many different sources of course, this example is pulling from a google sheet with the Googlesheets4 package.
 ---
 class: light, animated, fadeIn
 
@@ -408,6 +425,9 @@ if(data_updated){
 }
 ```
 
+???
+Next we have example of logic control flows. This section uses logic variables from previous section to determine if the pipeline should launch additional scripts.<br><br>
+In this specific example, ONLY if the data was updated it will go ahead and launch additional data processing and visualization scripts. If the data wasn't updated, these additional scripts are not launched, thus saving some computer power and time.
 ---
 class: light, animated, fadeIn
 
@@ -423,21 +443,27 @@ rmarkdown::render("reports/example_report.Rmd",
                   output_file = "example_report.html")
 ```
 
+???
+The last part of the docking script is the rendering, or execution of the final output. In this example, the final deliverable is an R Markdown document. This can be changed to the deployment of a shiny app, or even just saving data out of R for use in another program like Power BI or Tableau.<br><br>
+So now that we've added some environmental structures, our piepline looks like this....
 ---
 class: dark, center, middle, animated, fadeIn
 
 
-<img src= "images/pl_3.png", width = "100%", height = "100%">
+<img src= "images/pl_3.png" alt="The third version of the abstract art that represents a data pipeline when data investigations and environmental structures are added. The image now looks a bit cleaner and the tangled mess appears to start straightened out into some type of pattern. Some aspects of the image are still messy with the hole in the center of it widening even more." width = "100%" height = "100%">
 
 ???
-Added environmental structure
+Which takes us to the third main point...
 
 ---
 class: light, animated, fadeIn
 
 <h1><span>Main Points</span></h1>
 <br><br>
-<center><img src= "images/mp_3.png", width = "100%"></center>
+<center><img src= "images/mp_3.png" alt="The presentation's roadmap now with the third main point, Data Validations, highlighted." width = "100%"></center>
+
+???
+Data validation....<br> So, I feel like I'm exposing myself here, but the biggest thing I learned about validations were.... to do them<br>
 
 ---
 class: light, animated, fadeIn
@@ -449,8 +475,8 @@ class: light, animated, fadeIn
 </center>
 
 ???
-Guys, I feel like I'm exposing myself here, but the biggest thing I learned about validations were to do them<br>
-I still have a lot to learn myself about performing data validations efficiently.
+Because I WAS NOT checking myself, and as a result, I was indeed WRECKING myself. <br>
+I still have a lot to learn myself about performing data validations efficiently. So I'm not going to try and act like I'm an expert, but I can at least share the little bit that I did learn.
 
 ---
 class: light, animated, fadeIn
@@ -458,13 +484,15 @@ class: light, animated, fadeIn
 
 <h2><b>The Narcan Story</b></h2>
 
-<img src="images/narcan.png" alt="A picture of Meghan Harris on her first day of work as a Data Specialist.", height="200px"; style="float: left; margin-top:100px;"><center><br>
+<img src="images/narcan.png"  alt="A picture of a nasal spray medication called Narcan. Narcan is used to reverse opioid overdoses.", height="200px"; style="float: left; margin-top:100px;"><center><br>
 <font color = "#FF1616"><b>Pain<b></font> could have been avoided if I <b>validated</b> that "Narcan" variable.<br>
 
 Assumed all the values were `numeric` types when they were really `character` types<br><br>
 
 This situation needed a <b>variable "Type" check</b></center>
 
+???
+Validating and just properly checking the data is important because it gives us more confidence that we are handling the type of data that we are expecting.
 ---
 class: light, animated, fadeIn
 <h1><span>Validations</span></h1>
@@ -484,8 +512,11 @@ class: light, animated, fadeIn
 
 <h5><b>Examples of Validations Types I've personally used:</b></h5>
 <br><center>
-<img src= "images/validationtypes.png", width = "85%"></center>
+<img src= "images/validationtypes.png" alt="An image that shows 8 icons that represents 8 different types of validation types. A variable type, allowed or expected values, missing data, logic checks, uniqueness, string length, formatting, and range checks. This is not an exhaustive list, rather what Meghan Harris has personally dealt with at her previous job."  width = "85%"></center>
 
+???
+These are some types I personally dealt with.
+My point of showing this is to get the gears turning for you if you're tasked with the same thing. To just give you some ideas about validations you can check for if they apply to your situation.
 ---
 class: light, animated, fadeIn
 <h1><span>Validations</span></h1>
@@ -494,7 +525,7 @@ Validations can <b><font color = "#612884">exist in external and internal enviro
 
 <b>Best scenario</b>: Validations are implemented <b><font color = "#612884">externally</font></b><br>
 <center>
-<img src="images/extvalidation.png", width = "85%"></center>
+<img src="images/extvalidation.png" alt="A visual that shows the flow of data from an external environment to an internal environment when data validation is implemented externally before it reaches R or RStudio in the internal environment. It is proposed that this method of validation would hopefully be less work for the programmer as they are receiving cleaner data internally."  width = "85%"></center>
 
 ---
 class: light, animated, fadeIn
@@ -504,7 +535,7 @@ Validations can <b><font color = "#612884">exist in external and internal enviro
 
 <b>Usual scenario</b>: Programmer has to implement it <b><font color = "#612884">internally</font></b>
 
-<center><img src="images/intvalidation.png", width = "85%"></center>
+<center><img src="images/intvalidation.png" alt="A visual that shows the flow of data from an external environment to an internal environment when data validation is implemented internally within R or RStudio in the internal environment. It is proposed that this method of validation would possibly be more work for the programmer as they are receiving dirtier data internally that needs to be cleaned and validated." width = "85%"></center>
 
 ---
 class: light, animated, fadeIn
@@ -524,11 +555,13 @@ I did all of my validations manually in R...but there's a package for that!
 ???
 Nothing wrong with doing it manually<br>
 Can be cumbersome (depending on the problem)<br>
+although there's packages to help, depending on how complicated the data is, you may have to figure out some things manually. It may take longer, but you'll learn more about your data that way, so it's not all bad.<br><br>
+So now that I'm late to the party and figured out I need some type of data validation, the pipeline is now looking like this...
 
 ---
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/pl_4.png", width = "100%", height = "100%">
+<img src= "images/pl_4.png" alt="The fourth version of the abstract art that represents a data pipeline when data investigations, environmental structures, and data validations are added. The image now looks even more cleaner and the tangled mess is even more straightened out to start showing a type of kaleidoscopic effect with internal triangular shapes overlayed on top of one another. Although shapes can now be distinguished, the lines of the image are still a little messy with the hole in the center of it being defined even more." width = "100%" height = "100%">
 
 ???
 adding validation
@@ -539,6 +572,8 @@ class: light, animated, fadeIn
 <br><br>
 <center><img src= "images/mp_4.png", width = "100%"></center>
 
+???
+So the last main point I learned was about sustainability efforts...
 ---
 class: light, animated, fadeIn
 
@@ -558,7 +593,7 @@ class: light, animated, fadeIn
 
 What sustainability looks like in your organization will depend on:
 <br>
-<center><img src="images/susexs.png", width = "90%"></center>
+<center><img src="images/susexs.png" alt="A visual that shows three icons that identifies three factors that can affect how sustainability can look like for a pipeline. This includes the organization's environment, the expected data deliverables or use case for the data in the pipeline, and the overall status of health of the data pipeline." width = "90%"></center> 
 
 ???
 I didn't get to do much work for sustainability because of my the organization's environment<br>
@@ -595,60 +630,72 @@ class: light, animated, fadeIn
 
 <h1><span>Sustainability</span></h1>
 
-<center><img src="images/workflowex.png", height = "450px"></center>
+<center><img src="images/workflowex.png" alt = "An image that shows an example of a document that can be used to create pipeline sustainability by identifying, visualizing, and documenting the flow of data from outside of R and RStudio, to inside of it through processing and analyses, and out to the data's respective deliverable. Each data source is identified and marked on the top of the chart. The data processing that visualizes each modularized script and shows the order and flow the the data in the process." height = "450px"></center>
 
+???
+This is an example of one of the largest pipelines I created in R. The specifics aren't important here. The main takeaway is how helpful it can be to visualize the actual data workflow in the pipeline. Including information about the data, where it comes from, what scripts it feeds into, and what deliverables/outputs are expected upon completion of the workflow. This helps with sustainability because it allows the pipeline itself to visually represented and explained. SO not only can other people hopefully understand how its working, but the hope is that you can also review it and use it for quality improvement. 
 ---
 class: light, animated, fadeIn
 
 <h1><span>Sustainability</span></h1>
 
-<center><img src="images/datamapex.png", height = "450px"></center>
+<center><img src="images/datamapex.png" alt = "An example of a preliminary data map that was used for opioid data. This visual shows a simple way to map different related data sources together in a simple schema. Each box represents a data source, with the variables listed in it. Solid lines connect data sources that have known matching primary keys, or variables that can be used to easily link a relationship between the data sources, while dotted lines represent potential data that can be used to link different data sources." height = "450px"></center>
 
+???
+This is a more granular visual representation of a dataset where we see a human-readable description of what's in it, but also potential primary keys - or common variables that can be used to create a relationship between the dataset. Pretty much like a database schema we'd see in SQL or other similar scenarios.
 ---
 class: light, animated, fadeIn
 
 <h1><span>Sustainability</span></h1>
 
-<center><img src="images/transdocex.png"></center>
+<center><img src="images/transdocex.png" alt = "A screenshot of a transition document Meghan Harris created when she resigned from her last position. This is an excerpt from the document that lists issues that were found with data quality and missingness with a pipeline. The excerpt also goes into explaining the basic software requirements that are required to keep the data pipeline running smoothly."></center>
+
+???
+This is an excerpt from a transition document that I created when I left my last position. Ensuring that you have documentation not only for any one that may pick up the work you do, but also for other non-programmers is helpful. This helps to encourage sustainability as it keeps all applicable parties informed on the work that was done, and the work that needs to be done to make sure the pipeline remains functional.<br>
+
+OK, so now that I've zoomed by all of that, let's recap...
 
 ---
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/initial_dream.png", width = "100%", height = "100%">
+<img src= "images/initial_dream.png" alt="A abstract piece of generative art that looks like a tangled ball of black string with various lighter colors mixed in. Some may even say it looks like a messy black hole." width = "100%" height = "100%">
 
 ???
-head first
+This is what the pipeline looks like if we jump in head first
 
 ---
 class: dark, center, middle, animated, fadeIn
 
 
-<img src= "images/pl_2.png", width = "100%", height = "100%">
+<img src= "images/pl_2.png" alt="The second version of the abstract art that represents a data pipeline when data investigations are performed. The image still looks like a tangled mess, but with the hole in the center of it widening a bit." width = "100%" height = "100%">
 
 ???
-starting investigations
+When we start investigating the data and environment...
 
 ---
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/pl_3.png", width = "100%", height = "100%">
+<img src= "images/pl_3.png" alt="The third version of the abstract art that represents a data pipeline when data investigations and environmental structures are added. The image now looks a bit cleaner and the tangled mess appears to start straightened out into some type of pattern. Some aspects of the image are still messy with the hole in the center of it widening even more." width = "100%" height = "100%">
 
 ???
-adding structures 
+when we add structures to the external and internal environment... 
 
 ---
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/pl_4.png", width = "100%", height = "100%">
+<img src= "images/pl_4.png" alt="The fourth version of the abstract art that represents a data pipeline when data investigations, environmental structures, and data validations are added. The image now looks even more cleaner and the tangled mess is even more straightened out to start showing a type of kaleidoscopic effect with internal triangular shapes overlayed on top of one another. Although shapes can now be distinguished, the lines of the image are still a little messy with the hole in the center of it being defined even more." width = "100%" height = "100%">
 
 ???
-adding validations
+when we add data checks and validations
 
 ---
 class: dark, center, middle, animated, fadeIn
 
-<img src= "images/pl_5.png", width = "100%", height = "100%">
+<img src= "images/pl_5.png" alt="The fifth and final version of the abstract art that represents a data pipeline when data investigations, environmental structures, data validations, and sustainability efforts are added. The image now looks very clear. While it is not none what it is, one could say the image is pretty and orderly and no longer a tangled mess. Although it's hard to really know what this image is, enough clarity is given to appreciate that the components seem to go well together. This is representative of most data pipelines that exist in the real world. Most can be so large, or so complex, but with enough clarity, you can get something functional." width = "100%" height = "100%">
 
 ???
-creating and maintaining sustainability
-The main point that, even after putting so much work into it, I still think it looks mysterious
+and finally, this is what the pipeline can look like after we implement and maintain some sustainability efforts for the pipeline...<br><br>
+And you know, I still don't know what this is a picture of, but I know that it looks pretty (to me anyway) and that it has some clear shapes, straight lines, and colors. But maybe that's the point, right?<br><br>
+If you are someone that is just starting out in data science, or teaching yourself how to use R like I was in this situation, something that you will, or may have learned is that having things be just "functional",can be enough. And sometimes, you can't possibly know everything about the data you are dealing with all of the time, but you can still appreciate the unknowns and the efforts that have been made to create the pipeline you have to work with.<br><br>
+Of course, through time, we all want to evolve and use best practices and feel that we are 100% knowledgeable in what we do, but my hope is that I've given you guys something useful to take back with you today, to try and make this process of making data pipelines a little less painful, especially if you're going to embark on the same journey of making them from scratch, no matter where you are in the process. <br><br>
+Thank you for listening.

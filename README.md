@@ -1,4 +1,4 @@
-<img src="images/readme_logo.png" alt="Making Data Pipelines in R: A Story From A Self Taught Perspective Resources and Materials on a black and gray blotchy background" style="max-width='100%;'"/>
+<img src="images/readme_logo.png" alt="Making Data Pipelines in R: A Story From A Self Taught Perspective Resources and Materials on a black and gray blotchy background" style="max-width='100%'"/>
 
 # **Resources for Making Data Pipelines in R** <br>
 
@@ -10,7 +10,7 @@ This repository contains supplemental resources and materials that coincide with
 
 This repository can serve as a general learning tool, resource, and source of inspiration for those who want to begin creating data pipelines from scratch in R. Data pipelines is an expansive topic that is fluid and varies by industry, organizational setting, and professional use case. Your mileage may vary. Feel free to use anything in this repository that may help you in your own pipeline adventures!
 
-<img src="images/pl_flow.png" style="max-width: 100%"/>
+<img src="images/pl_flow.png" alt="A visual artistic representation of a data pipeline in stages as you start from creating it, to investigating the data, to building structure into it, adding data validations, and creating and maintaining sustainability." style="max-width='100%'"/>
 
 <br>
 
@@ -26,7 +26,6 @@ This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylo
 
 ## **Example (Non-Technical) Documents (First Investigations and External Environment)**
 
-
 Example (Non-Technical) Documents like metadata tables and data workflow diagrams that can be used to disseminate general pipeline information. These documents can be found for modification and download [here](examples/documents).
 
 <br><br>
@@ -36,9 +35,11 @@ Example (Non-Technical) Documents like metadata tables and data workflow diagram
 Example R Projects and scripts can be found on the repository [here](examples/projects).<br><br>
 
 ### More Complicated Example
+
 For those looking for **more complicated** scripts that exercises knowledge of intermediate script modularization, custom functions, and script chaining, you may be interested in the example R Project *"simple_pipeline"* located [here](examples/projects/simple_pipeline)<br><br>
 
 ### Simpler Example
+
 For those that want an **lighter introduction** to chaining scripts together without worrying about intermediate knowledge of working directories, you may be interested in the example R project *"even_simpler_pipeline"* located [here](examples/projects/even_simpler_pipeline)
 
 <br><br>
