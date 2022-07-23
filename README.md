@@ -32,7 +32,10 @@ Example (Non-Technical) Documents like metadata tables and data workflow diagram
 
 ## **Example R Scripts (Internal Environment)**
 
-Example R Projects and scripts can be found on the repository [here](examples/projects).<br><br>
+Example R Projects and scripts can be found on the repository [here](examples/project_files).<br><br>
+
+*For more information about how to fork,clone, or pull down repositories for your own practice/use on Github, please refer to to this [Git Docs Article](https://docs.github.com/en/get-started/quickstart/fork-a-repo).*<br>
+
 
 ### More Complicated Example
 
