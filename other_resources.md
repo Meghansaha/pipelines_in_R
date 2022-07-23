@@ -51,8 +51,8 @@ As mentioned in the Talk, sustainability can look like a lot of different things
 
 - The [`flowr` Package](https://github.com/flow-r/flowr) by [Sahil Seth](https://github.com/sahilseth)- Useful for experimenting with visualizing workflows in R 
 
-- [Codebook Template](examples/documents/codebook_template.docx) 
+- [Codebook Template](examples/documents/codebook_template.docx) - Useful for thinking about what to put into a codebook. This is a word document. If you'd like, you could recreate this in R Markdown or other programs.
 
-- [Workflow Reference](examples/documents/workflow_reference.pdf)
+- [Workflow Reference](examples/documents/workflow_reference.pdf) - Useful for inspiration about visualizing and describing workflows in your pipeline. This was originally created in Canva, but any visualization software, or even Microsoft Powerpoint would suffice.
 
-- [Data Map Template](examples/documents/map_template.pptx)
+- [Data Map Template](examples/documents/map_template.pptx) - Useful for giving an editable template for visualizing datasets on a more granular level. Similar to SQL schema visualizations. Can be created in any visualization software. Created here in powerpoint for ease of sharing.
