@@ -1,0 +1,54 @@
+---
+title: "Example Report"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(janitor)
+library(knitr)
+```
+
+```{r data_load_in, echo = FALSE}
+# Master Data===
+survey_data <- readRDS("../data/master_data.rds") %>%
+  clean_names() %>%
+  mutate("Participant ID" = as.character(row_number())) %>% #Making up an ID number for each person
+  rename("Reported Age" = "how_old_are_you") %>% #Renaming vars for easier plots/RMD
+  relocate("Participant ID", .before = "Reported Age") %>% #I'm just anal about IDs being first
+  mutate(`Reported Age` = factor(`Reported Age`, levels = c("Under 18", "18-24", "25-34", "35-44", "45-54", "55-64", "Over 65"))) %>%
+  select(c("Participant ID", "Reported Age"))
+  
+
+#Games Data===
+games_data <- readRDS("../data/new_data_games.rds")
+
+#Music/Artist Data===
+artists <- readRDS("../data/fav_artists.rds")
+
+```
+
+## About
+This is an super scientific document that explores super accurate data about age, affinity for video games, and music among willing participants!
+
+## Participant Demographics
+The only demographic variable that was recorded was age range.
+
+```{r age_range_table, echo = FALSE}
+survey_data %>%
+  kable()
+```
+
+## Affinity for Games
+We asked everyone if they liked video games or not. Here are the results:
+
+```{r games_viz, echo=FALSE}
+games_viz <- readRDS("plots/game_viz.rds")
+games_viz
+```
+
+## Affinity for Music
+Finally, we asked everyone who there favorite artists were. People stated their favorites were `r combine_words(artists)`. Which shows us some variation between genres.

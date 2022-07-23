@@ -36,11 +36,11 @@ Example R Projects and scripts can be found on the repository [here](examples/pr
 
 ### More Complicated Example
 
-For those looking for **more complicated** scripts that exercises knowledge of intermediate script modularization, custom functions, and script chaining, you may be interested in the example R Project *"simple_pipeline"* located [here](examples/projects/simple_pipeline)<br><br>
+For those looking for **more complicated** scripts that exercises knowledge of intermediate script modularization, custom functions, and script chaining, you may be interested in the example R Project *"simple_pipeline"* located [here](examples/project_files/simple_pipeline)<br><br>
 
 ### Simpler Example
 
-For those that want an **lighter introduction** to chaining scripts together without worrying about intermediate knowledge of working directories, you may be interested in the example R project *"even_simpler_pipeline"* located [here](examples/projects/even_simpler_pipeline)
+For those that want an **lighter introduction** to chaining scripts together without worrying about intermediate knowledge of working directories, you may be interested in the example R project *"even_simpler_pipeline"* located [here](examples/project_files/even_simpler_pipeline)
 
 <br><br>
 
