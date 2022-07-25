@@ -18,6 +18,9 @@ As admitted in the Making Data Pipelines in R Talk, I personally learned about t
 
 ### ***Specific Resources for Performing Data Validations in R***
 
+- The [The `pointblank` Package](https://github.com/rich-iannone/pointblank) by [Richard Iannone](https://twitter.com/riannone)
+
+
 - The [`validate` package](https://github.com/data-cleaning/validate) and The [*Data Validation Cookbook*](https://data-cleaning.github.io/validate/) by [Mark van der Loo](http://www.markvanderloo.eu/)
 
 - [*A Lightweight Data Validation Ecosystem with R, GitHub, and Slack*](https://emilyriederer.netlify.app/post/data-valid-lightweight/) by [Emily Riederer](https://emilyriederer.netlify.app/about/)

@@ -16,21 +16,11 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-.title[
 # Making Data Pipelines in R:
-]
-.subtitle[
 ## A Story From A ‘Self-Taught’ Perspective
-]
-.author[
 ### Meghan Harris, MPH
-]
-.institute[
 ### RStudio::conf(2022) | Washington D.C, U.S
-]
-.date[
 ### 27/07/2022 - July 27th, 2022
-]
 
 ---
 
@@ -559,15 +549,18 @@ class: light, animated, fadeIn
 &lt;h1&gt;&lt;span&gt;Validations&lt;/span&gt;&lt;/h1&gt;
 I did all of my validations manually in R...but there's a package for that!
 &lt;br&gt;&lt;br&gt;
+[The `pointblank` Package](https://github.com/rich-iannone/pointblank)&lt;br&gt;
+
+&lt;p style ="font-size:20px"&gt;Iannone R, Vargas M (2022). pointblank: &lt;i&gt;Data Validation and Organization of Metadata for Local and Remote Tables&lt;/i&gt;. https://rich-iannone.github.io/pointblank/,   &lt;a href="https://github.com/rich-iannone/pointblank"&lt;/a&gt;&lt;/p&gt;
+
+
 [The `validate` Package]("https://github.com/data-cleaning/validate")&lt;br&gt;
 
 &lt;p style ="font-size:20px"&gt;MPJ van der Loo and E de Jonge (2020). Data Validation Infrastructure for R. &lt;i&gt;Journal of Statistical Software&lt;/i&gt;, Accepted for publication. &lt;a href="https://arxiv.org/abs/1912.09759"&gt;https://arxiv.org/abs/1912.09759&lt;/a&gt;&lt;/p&gt;
 
 &lt;br&gt;
 
-[The Data Validation Cookbook]("https://cran.r-project.org/web/packages/validate/vignettes/cookbook.html#Preface)&lt;/p&gt;
 
-&lt;p style ="font-size:20px"&gt;MPJ van der Loo (2022) &lt;i&gt;The Data Validation Cookbook version 1.1.1. &lt;a href="https://data-cleaning.github.io/validate"&gt;https://data-cleaning.github.io/validate&lt;/a&gt;&lt;/p&gt;
 
 ???
 Nothing wrong with doing it manually&lt;br&gt;
@@ -601,18 +594,7 @@ class: light, animated, fadeIn
 &lt;/center&gt;
 
 ???
-Def: Capability of something that can be maintained at length without interruption or weakening.
-
----
-class: light, animated, fadeIn
-
-&lt;h1&gt;&lt;span&gt;Sustainability&lt;/span&gt;&lt;/h1&gt;
-
-What sustainability looks like in your organization will depend on:
-&lt;br&gt;
-&lt;center&gt;&lt;img src="images/susexs.png" alt="A visual that shows three icons that identifies three factors that can affect how sustainability can look like for a pipeline. This includes the organization's environment, the expected data deliverables or use case for the data in the pipeline, and the overall status of health of the data pipeline." width = "90%"&gt;&lt;/center&gt; 
-
-???
+Def: Capability of something that can be maintained at length without interruption or weakening.&lt;br&gt;
 I didn't get to do much work for sustainability because of my the organization's environment&lt;br&gt;
 I was the data team/programmer/analyst/data viz designer&lt;br&gt;
 There was no time for comprehensive sustainability work - This is not uncommon.
@@ -765,19 +747,6 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
     deleted = true;
   });
 })();
-// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
-// screen reader (see PR #262)
-(function(d) {
-  let res = {};
-  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
-    const t = tr.querySelector('td:nth-child(2)').innerText;
-    tr.querySelectorAll('td:first-child .key').forEach(key => {
-      const k = key.innerText;
-      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
-    });
-  });
-  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
-})(document);
 (function() {
   "use strict"
   // Replace <script> tags in slides area to make them executable

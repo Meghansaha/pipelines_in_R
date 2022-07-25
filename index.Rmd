@@ -542,15 +542,18 @@ class: light, animated, fadeIn
 <h1><span>Validations</span></h1>
 I did all of my validations manually in R...but there's a package for that!
 <br><br>
+[The `pointblank` Package](https://github.com/rich-iannone/pointblank)<br>
+
+<p style ="font-size:20px">Iannone R, Vargas M (2022). pointblank: <i>Data Validation and Organization of Metadata for Local and Remote Tables</i>. https://rich-iannone.github.io/pointblank/,   <a href="https://github.com/rich-iannone/pointblank"</a></p>
+
+
 [The `validate` Package]("https://github.com/data-cleaning/validate")<br>
 
 <p style ="font-size:20px">MPJ van der Loo and E de Jonge (2020). Data Validation Infrastructure for R. <i>Journal of Statistical Software</i>, Accepted for publication. <a href="https://arxiv.org/abs/1912.09759">https://arxiv.org/abs/1912.09759</a></p>
 
 <br>
 
-[The Data Validation Cookbook]("https://cran.r-project.org/web/packages/validate/vignettes/cookbook.html#Preface)</p>
 
-<p style ="font-size:20px">MPJ van der Loo (2022) <i>The Data Validation Cookbook version 1.1.1. <a href="https://data-cleaning.github.io/validate">https://data-cleaning.github.io/validate</a></p>
 
 ???
 Nothing wrong with doing it manually<br>
@@ -584,18 +587,7 @@ class: light, animated, fadeIn
 </center>
 
 ???
-Def: Capability of something that can be maintained at length without interruption or weakening.
-
----
-class: light, animated, fadeIn
-
-<h1><span>Sustainability</span></h1>
-
-What sustainability looks like in your organization will depend on:
-<br>
-<center><img src="images/susexs.png" alt="A visual that shows three icons that identifies three factors that can affect how sustainability can look like for a pipeline. This includes the organization's environment, the expected data deliverables or use case for the data in the pipeline, and the overall status of health of the data pipeline." width = "90%"></center> 
-
-???
+Def: Capability of something that can be maintained at length without interruption or weakening.<br>
 I didn't get to do much work for sustainability because of my the organization's environment<br>
 I was the data team/programmer/analyst/data viz designer<br>
 There was no time for comprehensive sustainability work - This is not uncommon.
