@@ -497,19 +497,6 @@ Validating and just properly checking the data is important because it gives us 
 class: light, animated, fadeIn
 <h1><span>Validations</span></h1>
 
-There's lot of validation types to consider. What you'll need for your circumstances depends on:
--   Data Types
-
--   External Validations
-
--   Method of Collection
-
--   Other things that you'd probably never think of🙃
-
----
-class: light, animated, fadeIn
-<h1><span>Validations</span></h1>
-
 <h5><b>Examples of Validations Types I've personally used:</b></h5>
 <br><center>
 <img src= "images/validationtypes.png" alt="An image that shows 8 icons that represents 8 different types of validation types. A variable type, allowed or expected values, missing data, logic checks, uniqueness, string length, formatting, and range checks. This is not an exhaustive list, rather what Meghan Harris has personally dealt with at her previous job."  width = "85%"></center>
