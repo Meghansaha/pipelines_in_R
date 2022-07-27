@@ -622,16 +622,8 @@ class: light, animated, fadeIn
 
 ???
 This is a more granular visual representation of a dataset where we see a human-readable description of what's in it, but also potential primary keys - or common variables that can be used to create a relationship between the dataset. Pretty much like a database schema we'd see in SQL or other similar scenarios.
----
-class: light, animated, fadeIn
 
-<h1><span>Sustainability</span></h1>
-
-<center><img src="images/transdocex.png" alt = "A screenshot of a transition document Meghan Harris created when she resigned from her last position. This is an excerpt from the document that lists issues that were found with data quality and missingness with a pipeline. The excerpt also goes into explaining the basic software requirements that are required to keep the data pipeline running smoothly."></center>
-
-???
-This is an excerpt from a transition document that I created when I left my last position. Ensuring that you have documentation not only for any one that may pick up the work you do, but also for other non-programmers is helpful. This helps to encourage sustainability as it keeps all applicable parties informed on the work that was done, and the work that needs to be done to make sure the pipeline remains functional.<br>
-
+<br>
 OK, so now that I've zoomed by all of that, let's recap...
 
 ---
