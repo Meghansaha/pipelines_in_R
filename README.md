@@ -20,7 +20,7 @@ The slides for *"Making Data Pipelines in R"* can be found on the repository [he
 
 <br>
 
-This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylord National Convention Center in National Harbor,(Maryland/D.C) United States. A recording to this talk will be provided here when it is available.
+This talk being presented on July 27<sup>th</sup> 2022, 1:30 PM EST at the Gaylord National Convention Center in National Harbor,(Maryland/D.C) United States. A recording to this talk is available [here](https://www.rstudio.com/conference/2022/talks/making-data-pipelines-in-r/).
 
 <br><br>
 
